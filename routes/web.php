@@ -46,7 +46,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 });
 
-
+//Save
 Route::post("/saveComment",'PostController@saveComment');
 Route::post("/getComments","PostController@getComments");
 Route::post('/section-update', 'SectionController@update');
