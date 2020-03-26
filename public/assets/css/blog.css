@@ -1,0 +1,191 @@
+.title-section{
+  font-weight: bold;
+  font-family: "Patua One";
+  margin-left: 1rem;
+}
+.title-post{
+  font-weight: bold;
+  font-family: "Patua One";
+}
+.my-card .btn-floating{
+  background-color: #3b83bd;
+}
+.my-card .card-data{
+  background-color: #1c1c1c
+}
+.my-card .card-title{
+  height: 3rem;
+}
+.my-card img{
+  height: 12rem;
+}
+.text-post{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left:.3rem;
+}
+.row-text>*{
+  padding-left: 0 !important;
+}
+.container-comments{
+  background-color: #eeeeee ;
+  margin-left: 0 !important;
+  padding: 4rem 8rem;
+}
+
+.pagination.pg-blue .active .page-link {
+    background-color: #3b83bd;
+}
+.img-post{
+  padding: .5rem;
+  background-color: #eeeeee;
+  border-radius: .4rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.chip{
+  cursor: pointer;
+}
+.btn-green86:hover{
+  background-color: #3b83bd;
+  color: #f0f0f0;
+}
+.btn-green86{
+  background-color: #b8c829;
+  color: #fff;
+  font-family: "Patua One";
+  padding: .5rem 4rem !important;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+
+}
+.green86{
+  background-color: #3b83bd;
+}
+#btnSendComment{
+  padding: .7rem 3rem !important;
+
+}
+
+/*---------------------------------------------------------------------*/
+/*  16. FOOTER
+/*---------------------------------------------------------------------*/
+footer.footer {
+  color: #888;
+  background-color: #1c1c1c;
+  border-top: 2px solid #b8c829;
+}
+footer.footer a {
+  color: #c9c9c9;
+}
+footer.footer a:hover {
+  color: #ffffff;
+}
+footer.footer #footer {
+  background-color: #1c1c1c;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+footer.footer #footer .footer-column.not-right-column {
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  footer.footer #footer .footer-column.not-right-column {
+    margin-bottom: 0px;
+  }
+}
+footer.footer #footer .footer-column .footer-text {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer.footer #footer .footer-column .footer-text {
+    text-align: left;
+  }
+}
+footer.footer #footer h4 {
+  color: #c9c9c9;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 0.2em;
+}
+footer.footer #footer p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+footer.footer #footer ul.icon-list > li {
+  padding-bottom: 10px;
+}
+footer.footer #footer ul.icon-list > li > i {
+  padding-right: 10px;
+}
+footer.footer #footer ul.social-icon-list > li {
+  padding-bottom: 10px;
+}
+footer.footer #footer ul.social-icon-list > li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+footer.footer #footer ul.social-icon-list > li a:hover {
+  border-color: #ffffff;
+}
+footer.footer #footer .newsletter-form input {
+  background-color: transparent;
+  border-color: #888;
+}
+footer.footer #copyright {
+  background-color: #161616;
+  padding: 15px 0px;
+  border-top: 1px solid rgba(114, 114, 114, 0.25);
+}
+footer.footer #copyright p {
+  font-size: 13px;
+  text-align: center;
+  margin: 0px;
+}
+
+
+::-webkit-scrollbar {
+  width: 13px; }
+
+::-webkit-scrollbar-track {
+  background-color: #fff; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #3b83bd;
+  border: solid 3px #fff;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-corner {
+  background-color: transparent; }
+.btn-going-play{
+  background-color: #E31837;
+}
+#frm-comment{
+  margin-top: 2rem;
+}
+.comment-text{
+  color: #1c1c1c!important;
+}
+@media (min-width: 768px) {
+  footer.footer #copyright p {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container-comments{
+    padding: 4rem 2.5rem !important;
+  }
+}
+/*@media(max-width 769px){
+  .container-comments{
+    padding: 4rem .5rem !important;
+    background-color: transparent;
+  }
+}*/
