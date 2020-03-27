@@ -33,6 +33,21 @@
     <script src="assets/plugins/modernizr.min.js"></script>
     <![endif]-->
 </head>
+<style>
+.float-right-messenger{
+    display:block;
+    width:60px;
+    height:60px;
+    background-color:#b8c829;
+    position: fixed;
+    left:90%;
+    bottom:15%;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+}
+</style>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
@@ -619,11 +634,18 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </div>
     </div>
+=======
+        <div class="float-right-messenger">
+          <a data-toggle="modal" data-target="#modalPoll" class="btn">
+            <i class="fa fa-envelope" style="font-size:35px;color:#fff;padding-bottom:20px"></i> 
+          </a>
+        </div>
+>>>>>>> 1508b8ac1aa47de49d17bc39d512eb02e606c141
     <!-- Begin Footer -->
     <footer class="footer">
-
         <!-- Begin Footer Section -->
         <section id="footer">
             <div class="container">
@@ -785,7 +807,55 @@
 
     <!-- //End Footer -->
 
+    <!-- MODAL MESSENGER -->
+    <section class="section">
+      <div class="container">
+        <div class="row"> 
+              <div class="">
+                <!-- Modal: modalPoll -->
+                <div class="modal fade left" id="modalPoll" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true" data-backdrop="false">
+                  <div class="modal-dialog modal-full-height modal-left modal-notify  modal-info" role="document" >
+                    <div class="modal-content">
+                      <!--Header-->
+                      <div class="modal-header" style="background-color:#b8c829;"
+                        <p class="heading lead text-center text-white"><strong class="text-white">¿Tienes alguna duda? Contactanos por aquí</strong>
+                        </p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true" class="white-text">×</span>
+                        </button>
+                      </div>
+                      <!--Body-->
+                      <div class="modal-body" style="background-color:#c9e3d936">
+                        <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Últimos mensajes:</label>
+                          <div class="jumbotron">
+                            <h3>Hello, world!</h3>
+                          </div>
+                        </div>
+                          <form>
+                            <div class="form-group">
+                              <label for="message-text" class="col-form-label">Mensaje:</label>
+                              <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                          </form>
+                      </div>
+                      <!--Footer-->
+                      <div class="modal-footer justify-content-center" style="height:10%;background-color:#c9e3d936">
+                        <a  type="button" class="btn btn-primary waves-effect waves-light" >Enviar Mensaje
+                          <i class="fa fa-paper-plane ml-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal: modalPoll -->
+              </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- CIERRE DEL MODAL -->
     <!-- Plugins JS -->
     <script src="libs/jquery.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
