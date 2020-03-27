@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es">
+
 <head>
     <meta charset="utf-8">
-    <title>Audi - Laguna</title>
+    <title>{{__('ini.AUDI_LAG')}}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Google Font -->
@@ -11,7 +12,7 @@
     <link rel="shortcut icon" href="/assets/images/logo-banner.png">
     <!-- Bootstrap Core CSS -->
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-|
+    |
     <!-- Plugins CSS -->
     <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="libs/animate-css/animate.min.css" rel="stylesheet" type="text/css">
@@ -34,6 +35,7 @@
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="51">
 
     <!--[if lt IE 8]>
@@ -43,7 +45,7 @@
     <!-- Begin Page Loader -->
     <div id="page-loader">
         <div class="preload">
-            <img src="assets/img/preloader.gif" alt="Loading"/>
+            <img src="assets/img/preloader.gif" alt="Loading" />
         </div>
         <!-- //.preload -->
     </div>
@@ -80,42 +82,40 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="#page-top"><img src="/assets/images/logo-banner.png" class="img-fluid img-responsive img-logo-banner" style="width:14rem;height:4.5rem;margin-top:1rem;margin-bottom:1rem;" alt=""></a>
+                <a class="navbar-brand" href="#page-top"><img src="/assets/images/logo-banner.png"
+                        class="img-fluid img-responsive img-logo-banner"
+                        style="width:14rem;height:4.5rem;margin-top:1rem;margin-bottom:1rem;" alt=""></a>
             </div>
             <!-- //.navbar-header -->
 
             <div class="navbar-collapse collapse navbar-rj-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="page-scroll">
-                        <a href="#who-we-are">Acerca de nosotros</a>
+                        <a href="#who-we-are">{{__('ini.navbar.NB1')}}</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="#our-services">Servicios</a>
+                        <a href="#our-services">{{__('ini.navbar.NB2')}}</a>
                     </li>
 
                     <li class="page-scroll">
-                      <a href="#keep-in-touch">Redes sociales</a>
+                        <a href="#keep-in-touch">{{__('ini.navbar.NB3')}}</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="#our-latest-work">Nuestros Productos</a>
-                    </li>
-<!--
-                    <li class="page-scroll">
-                        <a href="#map">Ubicación</a>
-                    </li> -->
-
-                    <li class="page-scroll">
-                        <a href="#our-blog">Noticas</a>
+                        <a href="#our-latest-work">{{__('ini.navbar.NB4')}}</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="/blog" onclick="window.location = '/blog'">Blog</a>
+                        <a href="#our-blog">{{__('ini.navbar.NB5')}}</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a  href data-toggle="modal" data-target="#modalAccess">Entrar</a>
+                        <a href="/blog" onclick="window.location = '/blog'">{{__('ini.navbar.NB6')}}</a>
+                    </li>
+
+                    <li class="page-scroll">
+                        <a href data-toggle="modal" data-target="#modalAccess">{{__('ini.navbar.LOG')}}</a>
                     </li>
                 </ul>
             </div>
@@ -149,17 +149,13 @@
                     <div class="col-md-6">
                         <div id="carousel-who-we-are" class="owl-carousel owl-theme">
                             <div class="item">
-                                <img src="assets/images/system/1.jpeg" alt="" class="img-responsive img-rounded"/>
+                                <img src="assets/images/system/1.jpeg" alt="" class="img-responsive img-rounded" />
                             </div>
                             <!-- //.item -->
 
                             <div class="item">
-                                <img src="assets/images/system/2.jpg" alt="" class="img-responsive img-rounded"/>
+                                <img src="assets/images/system/2.jpg" alt="" class="img-responsive img-rounded" />
                             </div>
-                            <!-- //.item -->
-
-
-                            <!-- //.item -->
                         </div>
                         <!-- //.owl-carousel -->
                     </div>
@@ -167,13 +163,9 @@
 
                     <div class="col-md-6">
                         <div class="who-we-are-text">
-                            <h4>Estamos contigo</h4>
-
-                            <p>Estamos contigo.
-                            En Audi de México y su red de concesionarios actuamos con responsabilidad y
-                            tomamos las medidas necesarias de acuerdo con las recomendaciones de la OMS y 
-                            las autoridades correspondientes para seguir operando de forma habitual,
-                            así podremos brindarte nuestro servicio y asesoría..</p>
+                            <h4>{{__('ini.BODY1_TITLE')}}</h4>
+                            <h2>{{__('ini.AUDI_LAG')}}</h2>
+                            <p>{{__('ini.BODY_QUIENES_SOMOS')}}</p>
                             <!-- //.page-scroll -->
                         </div>
                         <!-- //.who-we-are-text -->
@@ -201,7 +193,7 @@
                                 <i class="fa fa-quote-right fa-4x"></i>
                             </span>
 
-                            <h2 style="color:#fff">"A la vanguardia a través de la tecnología".</h2>
+                            <h2 style="color:#fff">"{{__('ini.BODY2')}}".</h2>
 
                             <a href="#our-latest-work" class="btn btn-green86">¡Me interesa!</a>
                         </div>
@@ -219,71 +211,72 @@
 
 
 
-        <!-- Begin Our Services Section -->
-        <section id="our-services" class="section">
-            <div class="section-inner">
-                <div class="container section-content">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-title text-center">
-                                <h3 class="main-title">Nuestros Servicios</h3>
+    <!-- Begin Our Services Section -->
+    <section id="our-services" class="section">
+        <div class="section-inner">
+            <div class="container section-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center">
+                            <h3 class="main-title">Nuestros Servicios</h3>
 
-                                <h4 class="sub-title">Somos expertos desarrollando tus productos</h4>
+                            <h4 class="sub-title">Somos expertos desarrollando tus productos</h4>
 
-                                <span class="section-line"></span>
-                            </div>
-                            <!-- //.section-title -->
+                            <span class="section-line"></span>
                         </div>
-                        <!-- //.col-md-12 -->
+                        <!-- //.section-title -->
                     </div>
-                    <!-- //.row -->
-
-                    <div class="row">
-                      <div class="col-sm-2 col-md-2">
-                      </div>
-                        <div class="col-sm-4 col-md-4">
-                            <div class="funny-boxes float-shadow not-right-column text-center">
-                                <span class="funny-boxes-icon">
-                                    <i class="fa fa-lightbulb-o"></i>
-                                </span>
-
-                                <div class="funny-boxes-text">
-                                    <h4>Servicio de seguimiento Online</h4>
-
-                                    <p>Te ofrecemos el servicio completo de mensajeria instantanea para que asi puedas dar seguimiento a cualquier tramite en tu vehiculo,
-                                        desde cualquier informe, asesoramiento, hasta un servicio a tu coche o compra.</p>
-                                </div>
-                                <!-- //.funny-boxes-text -->
-                            </div>
-                            <!-- //.funny-boxes -->
-                        </div>
-                        <!-- //.col-sm-4 col-md-4 -->
-
-                        <div class="col-sm-4 col-md-4">
-                            <div class="funny-boxes float-shadow  text-center">
-                                <span class="funny-boxes-icon">
-                                    <i class="fa fa-heart-o"></i>
-                                </span>
-
-                                <div class="funny-boxes-text">
-                                    <h4>Línea propia.</h4>
-
-                                    <p>Ofrecemos nuestra propia linea de vehiculos de la más alta calidad y tecnologia.</p>
-                                </div>
-                                <!-- //.funny-boxes-text -->
-                            </div>
-                            <!-- //.funny-boxes -->
-                        </div>
-                        <!-- //.col-sm-4 col-md-4 -->
-
-                    </div>
-                    <!-- //.row -->
+                    <!-- //.col-md-12 -->
                 </div>
-                <!-- //.section-content -->
+                <!-- //.row -->
+
+                <div class="row">
+                    <div class="col-sm-2 col-md-2">
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="funny-boxes float-shadow not-right-column text-center">
+                            <span class="funny-boxes-icon">
+                                <i class="fa fa-lightbulb-o"></i>
+                            </span>
+
+                            <div class="funny-boxes-text">
+                                <h4>Servicio de seguimiento Online</h4>
+
+                                <p>Te ofrecemos el servicio completo de mensajeria instantanea para que asi puedas dar
+                                    seguimiento a cualquier tramite en tu vehiculo,
+                                    desde cualquier informe, asesoramiento, hasta un servicio a tu coche o compra.</p>
+                            </div>
+                            <!-- //.funny-boxes-text -->
+                        </div>
+                        <!-- //.funny-boxes -->
+                    </div>
+                    <!-- //.col-sm-4 col-md-4 -->
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="funny-boxes float-shadow  text-center">
+                            <span class="funny-boxes-icon">
+                                <i class="fa fa-heart-o"></i>
+                            </span>
+
+                            <div class="funny-boxes-text">
+                                <h4>Línea propia.</h4>
+
+                                <p>Ofrecemos nuestra propia linea de vehiculos de la más alta calidad y tecnologia.</p>
+                            </div>
+                            <!-- //.funny-boxes-text -->
+                        </div>
+                        <!-- //.funny-boxes -->
+                    </div>
+                    <!-- //.col-sm-4 col-md-4 -->
+
+                </div>
+                <!-- //.row -->
             </div>
-            <!-- //.section-inner -->
-        </section>
-        <!-- //End Our Services Section -->
+            <!-- //.section-content -->
+        </div>
+        <!-- //.section-inner -->
+    </section>
+    <!-- //End Our Services Section -->
 
 
     <!-- Begin Keep In Touch Section -->
@@ -308,8 +301,8 @@
                 <!-- //.row -->
 
                 <div class="row">
-                  <div class="col-xs- col-sm-2 col-md-3">
-                  </div>
+                    <div class="col-xs- col-sm-2 col-md-3">
+                    </div>
                     <div class="col-xs-6 col-sm-3 col-md-2">
                         <div class="social-icon-item text-center not-right-column top-column">
                             <a target="_blank" href="">
@@ -399,94 +392,102 @@
     </section>
     <!-- //End Keep In Touch Section -->
 
-        <!-- Begin Our Latest Work Section -->
-        <section id="our-latest-work" class="section">
-            <div class="section-inner">
-                <div class="container section-content">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-title text-center">
-                                <h2 class="main-title">Nuestros productos</h2>
-                                <span class="section-line"></span>
-                            </div>
-                            <!-- //.section-title -->
+    <!-- Begin Our Latest Work Section -->
+    <section id="our-latest-work" class="section">
+        <div class="section-inner">
+            <div class="container section-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center">
+                            <h2 class="main-title">Nuestros productos</h2>
+                            <span class="section-line"></span>
                         </div>
-                        <!-- //.col-md-12 -->
+                        <!-- //.section-title -->
                     </div>
-                    <!-- //.row -->
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="filter-portfolio">
-                                <ul class="list-unstyled">
-                                    <li class="active">
-                                        <a href="#" data-filter="*" class="btn btn-rj disabled">todo</a>
-                                    </li>
-                                    @foreach($categorias as $categoria)
-                                    <li class="">
-                                        <a href="#" data-filter=".{{trim($categoria->nombre)}}" class="btn btn-rj" data-categoria="{{$categoria->nombre}}">{{$categoria->nombre}}</a>
-                                    </li>
-                                    @endforeach
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="filter-portfolio">
+                            <ul class="list-unstyled">
+                                <li class="active">
+                                    <a href="#" data-filter="*" class="btn btn-rj disabled">todo</a>
+                                </li>
+                                @foreach($categorias as $categoria)
+                                <li class="">
+                                    <a href="#" data-filter=".{{trim($categoria->nombre)}}" class="btn btn-rj"
+                                        data-categoria="{{$categoria->nombre}}">{{$categoria->nombre}}</a>
+                                </li>
+                                @endforeach
 
-                                    <!-- <li>
+                                <!-- <li>
                                         <a href="#" data-filter=".logo" class="btn btn-rj">Logo</a>
                                     </li>
 
                                     <li>
                                         <a href="#" data-filter=".illustration" class="btn btn-rj">Illustration</a>
                                     </li> -->
-                                </ul>
-                            </div>
-                            <!-- //.filter-portfolio -->
+                            </ul>
                         </div>
-                        <!-- //.col-md-12 -->
+                        <!-- //.filter-portfolio -->
                     </div>
-                    <!-- //.row -->
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="popup-portfolio">
-                              @foreach($productos as $producto)
-                                <div class="portfolio-item grow {{$producto->categoria}}" data-categoria="{{trim($producto->categoria)}}">
-                                    <div class="inner-content">
-                                        <div class="portfolio-content">
-                                            <div class="portfolio-detail">
-                                                <a class="download-link" target="_blank" href="/assets/images/productos/{{$producto->imagen}}" title="{{$producto->nombre}}">
-                                                    <div class="portfolio-text">
-                                                        <h4>{{$producto->nombre}}</h4>
-                                                        <p>{{strip_tags($producto->descripcion)}}</p>
-                                                    </div>
-                                                    <!-- //.portfolio-text -->
-                                                </a>
-                                                <div class="text-center" style="text-align:center;position:relative;">
-                                                  <h6 role="button" data-id="{{$producto->id}}" class="btn btn-green86 btn-interesa" data-toggle="modal" data-target="#md-interes" style="margin-top:-39rem;">¡Me interesa!</h6>
-                                                </div>
-                                            </div>
-                                            <!-- //.portfolio-detail -->
-                                        </div>
-                                        <!-- //.portfolio-content -->
-                                        <img src="/assets/images/productos/{{$producto->imagen}}" alt="" class="img-responsive">
-                                        </img>
-
-                                    </div>
-                                    <!-- //.inner-content -->
-                                </div>
-                                @endforeach
-                                <!-- //.portfolio-item -->
-                            </div>
-                            <!-- //.popup-portfolio -->
-                        </div>
-                        <!-- //.col-md-12 -->
-                    </div>
-                    <!-- //.row -->
+                    <!-- //.col-md-12 -->
                 </div>
-                <!-- //.section-content -->
-            </div>
-            <!-- //.section-inner -->
-        </section>
-        <!-- //End Our Latest Work Section -->
+                <!-- //.row -->
 
-<!-- <hr style="color:#101010;backgroung-color:#101010;height:6rem;"> -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="popup-portfolio">
+                            @foreach($productos as $producto)
+                            <div class="portfolio-item grow {{$producto->categoria}}"
+                                data-categoria="{{trim($producto->categoria)}}">
+                                <div class="inner-content">
+                                    <div class="portfolio-content">
+                                        <div class="portfolio-detail">
+                                            <a class="download-link" target="_blank"
+                                                href="/assets/images/productos/{{$producto->imagen}}"
+                                                title="{{$producto->nombre}}">
+                                                <div class="portfolio-text">
+                                                    <h4>{{$producto->nombre}}</h4>
+                                                    <p>{{strip_tags($producto->descripcion)}}</p>
+                                                </div>
+                                                <!-- //.portfolio-text -->
+                                            </a>
+                                            <div class="text-center" style="text-align:center;position:relative;">
+                                                <h6 role="button" data-id="{{$producto->id}}"
+                                                    class="btn btn-green86 btn-interesa" data-toggle="modal"
+                                                    data-target="#md-interes" style="margin-top:-39rem;">¡Me interesa!
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <!-- //.portfolio-detail -->
+                                    </div>
+                                    <!-- //.portfolio-content -->
+                                    <img src="/assets/images/productos/{{$producto->imagen}}" alt=""
+                                        class="img-responsive">
+                                    </img>
+
+                                </div>
+                                <!-- //.inner-content -->
+                            </div>
+                            @endforeach
+                            <!-- //.portfolio-item -->
+                        </div>
+                        <!-- //.popup-portfolio -->
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.section-inner -->
+    </section>
+    <!-- //End Our Latest Work Section -->
+
+    <!-- <hr style="color:#101010;backgroung-color:#101010;height:6rem;"> -->
     <!-- Begin Map -->
     <!-- <div id="map">
         <div id="cd-google-map">
@@ -495,34 +496,35 @@
     </div> -->
     <!-- //End Map -->
 
-        <!-- Begin blog Section -->
-        <section id="our-blog" class="section" style="background-color:#ddd;">
-            <div class="section-inner">
-                <div class="container section-content">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-title text-center">
-                                <h3 class="main-title">Nuestro Blog</h3>
+    <!-- Begin blog Section -->
+    <section id="our-blog" class="section" style="background-color:#ddd;">
+        <div class="section-inner">
+            <div class="container section-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center">
+                            <h3 class="main-title">Nuestro Blog</h3>
 
-                                <h4 class="sub-title">Visita nuestro Blog y conoce más</h4>
+                            <h4 class="sub-title">Visita nuestro Blog y conoce más</h4>
 
-                                <span class="section-line"></span>
-                            </div>
-                            <!-- //.section-title -->
+                            <span class="section-line"></span>
                         </div>
-                        <!-- //.col-md-12 -->
+                        <!-- //.section-title -->
                     </div>
-                    <!-- //.row -->
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
 
-                    <div class="row">
-                      @foreach($posts as $post)
-                        <div class="col-sm-4 col-md-4">
-                          <!--Card-->
-                          <div class="card">
+                <div class="row">
+                    @foreach($posts as $post)
+                    <div class="col-sm-4 col-md-4">
+                        <!--Card-->
+                        <div class="card">
 
                             <!--Card image-->
                             <div class="view overlay hm-white-slight">
-                                <img src="/assets/images/post/{{$post->banner}}" class="img-fluid" alt="{{$post->titulo}}" style="width:100%; height:22rem;">
+                                <img src="/assets/images/post/{{$post->banner}}" class="img-fluid"
+                                    alt="{{$post->titulo}}" style="width:100%; height:22rem;">
                                 <a>
                                     <div class="mask"></div>
                                 </a>
@@ -541,82 +543,84 @@
 
                             <!-- Card footer -->
                             <div class="card-data">
-                              <h4 class="card-title">{{$post->titulo}}</h4>
-                              <!-- <ul>
+                                <h4 class="card-title">{{$post->titulo}}</h4>
+                                <!-- <ul>
                                   <li><i class="fa fa-clock-o"></i> 05/10/2015</li>
                                   <li><a href="#"><i class="fa fa-comments-o"></i>12</a></li>
                               </ul> -->
                             </div>
                             <!-- Card footer -->
 
-                          </div>
-                          <!--/.Card-->
-
-                            <!-- //.funny-boxes -->
                         </div>
-                        @endforeach
+                        <!--/.Card-->
+
+                        <!-- //.funny-boxes -->
                     </div>
-                    <!-- //.row -->
-                    <center class="center-button">
-                      <a href="/blog" class="btn btn-green86 btn-lg">Visitar Blog</a>
-                    </center>
+                    @endforeach
                 </div>
-                <!-- //.section-content -->
+                <!-- //.row -->
+                <center class="center-button">
+                    <a href="/blog" class="btn btn-green86 btn-lg">Visitar Blog</a>
+                </center>
             </div>
-            <!-- //.section-inner -->
-        </section>
-        <!-- //End blog Section -->
-
-        <div class="modal fade in" id="md-interes" tabindex="-1" role="dialog" aria-hidden="false">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-body">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="">
-                      <label style="font-size:1.6rem;">Hazle saber al administrador que te interesa este producto</label>
-                      <hr class="hr-login">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-">
-
-                  </div>
-                  <div class="col-md-10">
-                    <div class="">
-                      <form id="frm-send-message-int">
-                        <div class="form-group">
-                          <label>Correo Electrónico</label>
-                          <input type="email" class="form-control" id="emailaddress" required>
-                        </div>
-                        <div class="form-group">
-                          <label>Nombre</label>
-                          <input type="text" class="form-control" id="nombres" required>
-                        </div>
-                        <div class="form-group">
-                          <label>Mensaje</label>
-                          <textarea class="form-control" id="mensaje" required></textarea>
-                        </div>
-                        <input type="hidden" name="id" id="id" value="0">
-                        <div class="form-group text-right">
-                          <button type="button" class="btn btn-warning" data-dismiss="modal" id="bntCancel">
-                            <span class="fa fa-check"></span>
-                            Cancelar
-                          </button>
-                          <button type="submit" class="btn btn-success" id="btnSendInt">
-                            <span class="fa fa-arrow-right"></span>
-                            Enviar
-                          </button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <!-- //.section-content -->
         </div>
+        <!-- //.section-inner -->
+    </section>
+    <!-- //End blog Section -->
+
+    <div class="modal fade in" id="md-interes" tabindex="-1" role="dialog" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="">
+                                <label style="font-size:1.6rem;">Hazle saber al administrador que te interesa este
+                                    producto</label>
+                                <hr class="hr-login">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-">
+
+                        </div>
+                        <div class="col-md-10">
+                            <div class="">
+                                <form id="frm-send-message-int">
+                                    <div class="form-group">
+                                        <label>Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="emailaddress" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nombre</label>
+                                        <input type="text" class="form-control" id="nombres" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Mensaje</label>
+                                        <textarea class="form-control" id="mensaje" required></textarea>
+                                    </div>
+                                    <input type="hidden" name="id" id="id" value="0">
+                                    <div class="form-group text-right">
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal"
+                                            id="bntCancel">
+                                            <span class="fa fa-check"></span>
+                                            Cancelar
+                                        </button>
+                                        <button type="submit" class="btn btn-success" id="btnSendInt">
+                                            <span class="fa fa-arrow-right"></span>
+                                            Enviar
+                                        </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <!-- Begin Footer -->
     <footer class="footer">
 
@@ -645,13 +649,14 @@
 
                                 <li>
                                     <i class="fa fa-clock-o"></i> HORARIOS:
-LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
+                                    LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
                                 </li>
                             </ul>
 
                             <ul class="social-icon-list list-unstyled list-inline">
                                 <li>
-                                    <a href="https://www.facebook.com/search/top/?q=green%2086%2C%20ecodise%C3%B1o"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://www.facebook.com/search/top/?q=green%2086%2C%20ecodise%C3%B1o"><i
+                                            class="fa fa-facebook"></i></a>
                                 </li>
 
                                 <!-- <li>
@@ -700,7 +705,8 @@ LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
 
                                 <div class="form-group">
                                     <label for="message">Mensaje</label>
-                                    <textarea type="text" id="message" style="background-color:transparent;" class="form-control" required></textarea>
+                                    <textarea type="text" id="message" style="background-color:transparent;"
+                                        class="form-control" required></textarea>
                                 </div>
 
                                 <button type="submit" class="btn btn-rj" id="btnSend">Enviar</button>
@@ -734,47 +740,47 @@ LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
 
 
     <div class="modal fade in" id="modalAccess" tabindex="-1" role="dialog" aria-hidden="false">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="">
-                  <label>Administración del sistema</label>
-                  <hr class="hr-login">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="">
+                                <label>Administración del sistema</label>
+                                <hr class="hr-login">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 hidden-sm hidden-xs">
+                            <img src="/assets/images/system/bg2.png" class="img-responsive">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="">
+                                <div class="form-group">
+                                    <label>Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo">
+                                </div>
+                                <div class="form-group">
+                                    <label>Contraseña</label>
+                                    <input type="password" class="form-control" id="pass">
+                                </div>
+                                <div class="form-group text-right">
+                                    <button type="button" class="btn btn-warning" data-dismiss="modal" id="btnRegister">
+                                        <span class="fa fa-check"></span>
+                                        Cancelar
+                                    </button>
+                                    <button type="button" class="btn btn-success" id="btnLogin">
+                                        <span class="fa fa-arrow-right"></span>
+                                        Entrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="row">
-              <div class="col-md-4 hidden-sm hidden-xs">
-                <img src="/assets/images/system/bg2.png" class="img-responsive">
-              </div>
-              <div class="col-md-8">
-                <div class="">
-                  <div class="form-group">
-                    <label>Correo Electrónico</label>
-                    <input type="email" class="form-control" id="correo">
-                  </div>
-                  <div class="form-group">
-                    <label>Contraseña</label>
-                    <input type="password" class="form-control" id="pass">
-                  </div>
-                  <div class="form-group text-right">
-                    <button type="button" class="btn btn-warning" data-dismiss="modal" id="btnRegister">
-                      <span class="fa fa-check"></span>
-                      Cancelar
-                    </button>
-                    <button type="button" class="btn btn-success" id="btnLogin">
-                      <span class="fa fa-arrow-right"></span>
-                      Entrar
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <!-- //End Footer -->
@@ -818,19 +824,20 @@ LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
     <script src="/scripts/login.js" type="text/javascript"></script>
     <script src="/scripts/buzon.js" charset="utf-8"></script>
     <script type="text/javascript">
-      $(function(){
-        setTimeout(function(){
-          $(".list-unstyled li.active").next().children("a").trigger("click");
-          //  var filtros = $(".list-unstyled li.active>a").data("filter");
-          //  $(".portfolio-item").hide();
-          //  $(filtros).show();
-          //console.clear();
-        },700)
-        $(".btn-interesa").click(function(){
-          $("#id").val($(this).data("id"));
-          //setTimeout(function(){$(".mfp-close").trigger("click");},1000)
-        })
-      });
+        $(function () {
+            setTimeout(function () {
+                $(".list-unstyled li.active").next().children("a").trigger("click");
+                //  var filtros = $(".list-unstyled li.active>a").data("filter");
+                //  $(".portfolio-item").hide();
+                //  $(filtros).show();
+                //console.clear();
+            }, 700)
+            $(".btn-interesa").click(function () {
+                $("#id").val($(this).data("id"));
+                //setTimeout(function(){$(".mfp-close").trigger("click");},1000)
+            })
+        });
     </script>
 </body>
+
 </html>
