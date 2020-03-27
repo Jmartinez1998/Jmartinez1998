@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="/assets/images/logo-banner.png">
     <!-- Bootstrap Core CSS -->
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    |
+
     <!-- Plugins CSS -->
     <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="libs/animate-css/animate.min.css" rel="stylesheet" type="text/css">
@@ -66,7 +66,6 @@
     </div>
     <!-- //End Page Loader -->
 
-
     <!-- Begin Intro Section -->
     <section id="intro" style="margin-top:-1.8rem;">
         <div class="intro-body text-center">
@@ -84,7 +83,6 @@
         <!-- //.intro-body -->
     </section>
     <!-- //End Intro Section -->
-
 
     <!-- Begin Navbar -->
     <nav id="navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -148,9 +146,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center">
-                            <h2 class="main-title"><strong>¿Quienes Somos?</strong></h2>
+                            <h2 class="main-title"><strong>{{__('ini.Q')}}</strong></h2>
 
-                            <h3 class="sub-title"><strong>QUEREMOS CONTARTE UN POCO DE NOSOTROS</strong></h3>
+                            <h3 class="sub-title"><strong>{{__('ini.IFO_N')}}</strong></h3>
 
                             <span class="section-line"></span>
                         </div>
@@ -210,7 +208,7 @@
 
                             <h2 style="color:#fff">"{{__('ini.BODY2')}}".</h2>
 
-                            <a href="#our-latest-work" class="btn btn-green86">¡Me interesa!</a>
+                            <a href="#our-latest-work" class="btn btn-green86">{{__('ini.btn.INTERES')}}</a>
                         </div>
                         <!-- //.quote-text -->
                     </div>
@@ -233,9 +231,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center">
-                            <h3 class="main-title">Nuestros Servicios</h3>
+                            <h3 class="main-title">{{__('ini.SERV')}}</h3>
 
-                            <h4 class="sub-title">Somos expertos desarrollando tus productos</h4>
+                            <h4 class="sub-title">{{__('ini.SERV_BODY')}}</h4>
 
                             <span class="section-line"></span>
                         </div>
@@ -255,11 +253,9 @@
                             </span>
 
                             <div class="funny-boxes-text">
-                                <h4>Servicio de seguimiento Online</h4>
+                                <h4>{{__('ini.B_SERVICIOS.HEAD')}}</h4>
 
-                                <p>Te ofrecemos el servicio completo de mensajeria instantanea para que asi puedas dar
-                                    seguimiento a cualquier tramite en tu vehiculo,
-                                    desde cualquier informe, asesoramiento, hasta un servicio a tu coche o compra.</p>
+                                <p>{{__('ini.B_SERVICIOS.BOD')}}</p>
                             </div>
                             <!-- //.funny-boxes-text -->
                         </div>
@@ -274,9 +270,9 @@
                             </span>
 
                             <div class="funny-boxes-text">
-                                <h4>Línea propia.</h4>
+                                <h4>{{__('ini.B_SERVICIOS.HEAD_2')}}</h4>
 
-                                <p>Ofrecemos nuestra propia linea de vehiculos de la más alta calidad y tecnologia.</p>
+                                <p>{{__('ini.B_SERVICIOS.BOD2')}}</p>
                             </div>
                             <!-- //.funny-boxes-text -->
                         </div>
@@ -303,9 +299,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center">
-                            <h3 class="main-title">Siguenos en redes sociales</h3>
+                            <h3 class="main-title">{{__('ini.REDS')}}</h3>
 
-                            <h4 class="sub-title">Nos gustaría saber más de tí</h4>
+                            <h4 class="sub-title">{{__('ini.INFO')}}</h4>
 
                             <span class="section-line"></span>
                         </div>
@@ -634,16 +630,11 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-    </div>
-    </div>
-=======
         <div class="float-right-messenger">
           <a data-toggle="modal" data-target="#modalPoll" class="btn">
             <i class="fa fa-envelope" style="font-size:35px;color:#fff;padding-bottom:20px"></i> 
           </a>
         </div>
->>>>>>> 1508b8ac1aa47de49d17bc39d512eb02e606c141
     <!-- Begin Footer -->
     <footer class="footer">
         <!-- Begin Footer Section -->
