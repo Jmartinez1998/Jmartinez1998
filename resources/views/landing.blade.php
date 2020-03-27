@@ -32,6 +32,21 @@
     <script src="assets/plugins/modernizr.min.js"></script>
     <![endif]-->
 </head>
+<style>
+.float-right-messenger{
+    display:block;
+    width:60px;
+    height:60px;
+    background-color:#b8c829;
+    position: fixed;
+    left:90%;
+    bottom:15%;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+}
+</style>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="51">
@@ -617,9 +632,13 @@
             </div>
           </div>
         </div>
+        <div class="float-right-messenger">
+          <a>
+            <i class="fa fa-envelope" style="font-size:40px;color:#fff"></i> 
+          </a>
+        </div>
     <!-- Begin Footer -->
     <footer class="footer">
-
         <!-- Begin Footer Section -->
         <section id="footer">
             <div class="container">
