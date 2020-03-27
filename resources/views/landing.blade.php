@@ -1,478 +1,314 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es">
-<head>
-    <meta charset="utf-8">
-    <title>Audi - Laguna</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- Google Font -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="/assets/images/logo-banner.png">
-    <!-- Bootstrap Core CSS -->
-    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-|
-    <!-- Plugins CSS -->
-    <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="libs/animate-css/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="libs/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
-    <link href="libs/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
-    <link href="libs/jquery-magnificPopup/magnific-popup.css" rel="stylesheet" type="text/css">
-
-    <!-- Component CSS -->
-    <link href="assets/css/component/component.css" rel="stylesheet" type="text/css">
-    <!--<link href="assets/css/component/colors/blue.css" rel="stylesheet" type="text/css">-->
-    <link rel="stylesheet" href="/libs/alertifyjs/css/alertify.min.css">
-    <!-- Main CSS -->
-    <link href="assets/css/green.css" rel="stylesheet" type="text/css">
-    <!--<link href="assets/css/colors/blue.css" rel="stylesheet" type="text/css">-->
-
-    <!-- Modernizr JS for IE9 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="assets/plugins/modernizr.min.js"></script>
-    <![endif]-->
-</head>
-<style>
-.float-right-messenger{
-    display:block;
-    width:60px;
-    height:60px;
-    background-color:#b8c829;
-    position: fixed;
-    left:90%;
-    bottom:15%;
-    border-radius:50%;
-    line-height:80px;
-    text-align:center;
-    z-index:999;
-}
-</style>
-
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="51">
-
-    <!--[if lt IE 8]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
+  <head>
+      <meta charset="utf-8">
+      <title>Audi - Laguna</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <!-- Google Font -->
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+      <link rel="shortcut icon" href="/assets/images/logo-banner.png">
+      <!-- Bootstrap Core CSS -->
+      <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <!-- Plugins CSS -->
+      <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="libs/animate-css/animate.min.css" rel="stylesheet" type="text/css">
+      <link href="libs/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+      <link href="libs/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
+      <link href="libs/jquery-magnificPopup/magnific-popup.css" rel="stylesheet" type="text/css">
+      <!-- Component CSS -->
+      <link href="assets/css/component/component.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="/libs/alertifyjs/css/alertify.min.css">
+      <!-- Main CSS -->
+      <link href="assets/css/green.css" rel="stylesheet" type="text/css">
+      <!-- Script -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <style>
+    .float-right-messenger{
+        display:block;
+        width:60px;
+        height:60px;
+        background-color:#b8c829;
+        position: fixed;
+        left:90%;
+        bottom:15%;
+        border-radius:50%;
+        line-height:80px;
+        text-align:center;
+        z-index:999;
+    }
+  </style>
+  <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="51">
     <!-- Begin Page Loader -->
     <div id="page-loader">
-        <div class="preload">
-            <img src="assets/img/preloader.gif" alt="Loading"/>
-        </div>
-        <!-- //.preload -->
+      <div class="preload">
+        <img src="assets/img/preloader.gif" alt="Loading"/>
+      </div>
+      <!-- //.preload -->
     </div>
     <!-- //End Page Loader -->
-
-
     <!-- Begin Intro Section -->
     <section id="intro" style="margin-top:-1.8rem;">
-        <div class="intro-body text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 intro-content">
-                        <!-- //.page-scroll -->
-                    </div>
-                    <!-- //.intro-content -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.intro-body -->
-    </section>
-    <!-- //End Intro Section -->
-
-
-    <!-- Begin Navbar -->
-    <nav id="navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="intro-body text-center">
         <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-rj-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand" href="#page-top"><img src="/assets/images/logo-banner.png" class="img-fluid img-responsive img-logo-banner" style="width:14rem;height:4.5rem;margin-top:1rem;margin-bottom:1rem;" alt=""></a>
+          <div class="row">
+            <div class="col-md-12 intro-content">
+              <!-- //.page-scroll -->
             </div>
-            <!-- //.navbar-header -->
-
-            <div class="navbar-collapse collapse navbar-rj-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="page-scroll">
-                        <a href="#who-we-are">Acerca de nosotros</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a href="#our-services">Servicios</a>
-                    </li>
-
-                    <li class="page-scroll">
-                      <a href="#keep-in-touch">Redes sociales</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a href="#our-latest-work">Nuestros Productos</a>
-                    </li>
-<!--
-                    <li class="page-scroll">
-                        <a href="#map">Ubicación</a>
-                    </li> -->
-
-                    <li class="page-scroll">
-                        <a href="#our-blog">Noticas</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a href="/blog" onclick="window.location = '/blog'">Blog</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a  href data-toggle="modal" data-target="#modalAccess">Entrar</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- //.navbar-collapse -->
+            <!-- //.intro-content -->
+          </div>
+          <!-- //.row -->
         </div>
         <!-- //.container -->
+      </div>
+      <!-- //.intro-body -->
+    </section>
+    <!-- //End Intro Section -->
+    <!-- Begin Navbar -->
+    <nav id="navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-rj-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#page-top"><img src="/assets/images/logo-banner.png" class="img-fluid img-responsive img-logo-banner" style="width:14rem;height:4.5rem;margin-top:1rem;margin-bottom:1rem;" alt=""></a>
+        </div>
+        <!-- //.navbar-header -->
+        <div class="navbar-collapse collapse navbar-rj-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="page-scroll">
+              <a href="#who-we-are">Acerca de nosotros</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#our-services">Servicios</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#keep-in-touch">Redes sociales</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#our-latest-work">Nuestros Productos</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#our-blog">Noticas</a>
+            </li>
+            <li class="page-scroll">
+              <a href="/blog" onclick="window.location = '/blog'">Blog</a>
+            </li>
+            <li class="page-scroll">
+              <a  href data-toggle="modal" data-target="#modalAccess">Entrar</a>
+            </li>
+          </ul>
+        </div>
+        <!-- //.navbar-collapse -->
+      </div>
+      <!-- //.container -->
     </nav>
     <!-- //End Navbar -->
-
-
     <!-- Begin Who We Are Section -->
     <section id="who-we-are" class="section">
-        <div class="section-inner">
-            <div class="container section-content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title text-center">
-                            <h2 class="main-title"><strong>¿Quienes Somos?</strong></h2>
-
-                            <h3 class="sub-title"><strong>QUEREMOS CONTARTE UN POCO DE NOSOTROS</strong></h3>
-
-                            <span class="section-line"></span>
-                        </div>
-                        <!-- //.section-title -->
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id="carousel-who-we-are" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="assets/images/system/1.jpeg" alt="" class="img-responsive img-rounded"/>
-                            </div>
-                            <!-- //.item -->
-
-                            <div class="item">
-                                <img src="assets/images/system/2.jpg" alt="" class="img-responsive img-rounded"/>
-                            </div>
-                            <!-- //.item -->
-
-
-                            <!-- //.item -->
-                        </div>
-                        <!-- //.owl-carousel -->
-                    </div>
-                    <!-- //.col-md-6 -->
-
-                    <div class="col-md-6">
-                        <div class="who-we-are-text">
-                            <h4>Estamos contigo</h4>
-
-                            <p>Estamos contigo.
-                            En Audi de México y su red de concesionarios actuamos con responsabilidad y
-                            tomamos las medidas necesarias de acuerdo con las recomendaciones de la OMS y 
-                            las autoridades correspondientes para seguir operando de forma habitual,
-                            así podremos brindarte nuestro servicio y asesoría..</p>
-                            <!-- //.page-scroll -->
-                        </div>
-                        <!-- //.who-we-are-text -->
-                    </div>
-                    <!-- //.col-md-6 -->
-                </div>
-                <!-- //.row -->
+      <div class="section-inner">
+        <div class="container section-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-title text-center">
+                <h2 class="main-title"><strong>¿Quienes Somos?</strong></h2>
+                <h3 class="sub-title"><strong>QUEREMOS CONTARTE UN POCO DE NOSOTROS</strong></h3>
+                <span class="section-line"></span>
+              </div>
+              <!-- //.section-title -->
             </div>
-            <!-- //.section-content -->
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div id="carousel-who-we-are" class="owl-carousel owl-theme">
+                <div class="item">
+                  <img src="assets/images/system/1.jpeg" alt="" class="img-responsive img-rounded"/>
+                </div>
+                <!-- //.item -->
+                <div class="item">
+                  <img src="assets/images/system/2.jpg" alt="" class="img-responsive img-rounded"/>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="who-we-are-text">
+                <h4>Estamos contigo</h4>
+                <p>Estamos contigo.
+                  En Audi de México y su red de concesionarios actuamos con responsabilidad y
+                  tomamos las medidas necesarias de acuerdo con las recomendaciones de la OMS y 
+                  las autoridades correspondientes para seguir operando de forma habitual,
+                  así podremos brindarte nuestro servicio y asesoría..
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- //.section-inner -->
+      </div>
     </section>
     <!-- //End Who We Are Section -->
-
     <!-- Begin Quote Section -->
     <section id="quote" class="section section-bgimage-yes">
-        <div class="section-inner">
-            <div class="section-overlay"></div>
-
-            <div class="container section-content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="quote-text text-center">
-                            <span class="quote-icon">
-                                <i class="fa fa-quote-right fa-4x"></i>
-                            </span>
-
-                            <h2 style="color:#fff">"A la vanguardia a través de la tecnología".</h2>
-
-                            <a href="#our-latest-work" class="btn btn-green86">¡Me interesa!</a>
-                        </div>
-                        <!-- //.quote-text -->
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
+      <div class="section-inner">
+        <div class="section-overlay"></div>
+        <div class="container section-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="quote-text text-center">
+                <span class="quote-icon">
+                  <i class="fa fa-quote-right fa-4x"></i>
+                </span>
+                <h2 style="color:#fff">"A la vanguardia a través de la tecnología".</h2>
+                <a href="#our-latest-work" class="btn btn-green86">¡Me interesa!</a>
+              </div>
             </div>
-            <!-- //.section-content -->
+          </div>
         </div>
-        <!-- //.section-inner -->
+      </div>
     </section>
     <!-- //End Quote Section -->
-
-
-
-        <!-- Begin Our Services Section -->
-        <section id="our-services" class="section">
-            <div class="section-inner">
-                <div class="container section-content">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-title text-center">
-                                <h3 class="main-title">Nuestros Servicios</h3>
-
-                                <h4 class="sub-title">Somos expertos desarrollando tus productos</h4>
-
-                                <span class="section-line"></span>
-                            </div>
-                            <!-- //.section-title -->
-                        </div>
-                        <!-- //.col-md-12 -->
-                    </div>
-                    <!-- //.row -->
-
-                    <div class="row">
-                      <div class="col-sm-2 col-md-2">
-                      </div>
-                        <div class="col-sm-4 col-md-4">
-                            <div class="funny-boxes float-shadow not-right-column text-center">
-                                <span class="funny-boxes-icon">
-                                    <i class="fa fa-lightbulb-o"></i>
-                                </span>
-
-                                <div class="funny-boxes-text">
-                                    <h4>Servicio de seguimiento Online</h4>
-
-                                    <p>Te ofrecemos el servicio completo de mensajeria instantanea para que asi puedas dar seguimiento a cualquier tramite en tu vehiculo,
-                                        desde cualquier informe, asesoramiento, hasta un servicio a tu coche o compra.</p>
-                                </div>
-                                <!-- //.funny-boxes-text -->
-                            </div>
-                            <!-- //.funny-boxes -->
-                        </div>
-                        <!-- //.col-sm-4 col-md-4 -->
-
-                        <div class="col-sm-4 col-md-4">
-                            <div class="funny-boxes float-shadow  text-center">
-                                <span class="funny-boxes-icon">
-                                    <i class="fa fa-heart-o"></i>
-                                </span>
-
-                                <div class="funny-boxes-text">
-                                    <h4>Línea propia.</h4>
-
-                                    <p>Ofrecemos nuestra propia linea de vehiculos de la más alta calidad y tecnologia.</p>
-                                </div>
-                                <!-- //.funny-boxes-text -->
-                            </div>
-                            <!-- //.funny-boxes -->
-                        </div>
-                        <!-- //.col-sm-4 col-md-4 -->
-
-                    </div>
-                    <!-- //.row -->
-                </div>
-                <!-- //.section-content -->
+    <!-- Begin Our Services Section -->
+    <section id="our-services" class="section">
+      <div class="section-inner">
+        <div class="container section-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-title text-center">
+                <h3 class="main-title">Nuestros Servicios</h3>
+                <h4 class="sub-title">Somos expertos desarrollando tus productos</h4>
+                <span class="section-line"></span>
+              </div>
             </div>
-            <!-- //.section-inner -->
-        </section>
-        <!-- //End Our Services Section -->
-
-
+          </div>
+          <div class="row">
+            <div class="col-sm-2 col-md-2"></div>
+            <div class="col-sm-4 col-md-4">
+              <div class="funny-boxes float-shadow not-right-column text-center">
+                <span class="funny-boxes-icon">
+                  <i class="fa fa-lightbulb-o"></i>
+                </span>
+                <div class="funny-boxes-text">
+                  <h4>Servicio de seguimiento Online</h4>
+                  <p>Te ofrecemos el servicio completo de mensajeria instantanea para que asi puedas dar seguimiento a cualquier tramite en tu vehiculo,
+                    desde cualquier informe, asesoramiento, hasta un servicio a tu coche o compra.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <div class="funny-boxes float-shadow  text-center">
+                <span class="funny-boxes-icon">
+                  <i class="fa fa-heart-o"></i>
+                </span>
+                <div class="funny-boxes-text">
+                  <h4>Línea propia.</h4>
+                  <p>Ofrecemos nuestra propia linea de vehiculos de la más alta calidad y tecnologia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //End Our Services Section -->
     <!-- Begin Keep In Touch Section -->
     <section id="keep-in-touch" class="section section-bgimage-yes">
-        <div class="section-inner">
-            <div class="section-overlay"></div>
-
-            <div class="container section-content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title text-center">
-                            <h3 class="main-title">Siguenos en redes sociales</h3>
-
-                            <h4 class="sub-title">Nos gustaría saber más de tí</h4>
-
-                            <span class="section-line"></span>
-                        </div>
-                        <!-- //.section-title -->
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-
-                <div class="row">
-                  <div class="col-xs- col-sm-2 col-md-3">
-                  </div>
-                    <div class="col-xs-6 col-sm-3 col-md-2">
-                        <div class="social-icon-item text-center not-right-column top-column">
-                            <a target="_blank" href="">
-                                <span class="social-icon">
-                                    <i class="fa fa-facebook"></i>
-                                </span>
-
-                                <h4>Facebook</h4>
-                            </a>
-                        </div>
-                        <!-- //.social-icon-item -->
-                    </div>
-                    <!-- //.col-xs-6 col-sm-4 col-md-2 -->
-
-                    <!-- <div class="col-xs-6 col-sm-4 col-md-2">
-                        <div class="social-icon-item text-center not-right-column top-column">
-                            <a href="#twitter">
-                                <span class="social-icon">
-                                    <i class="fa fa-twitter"></i>
-                                </span>
-
-                                <h4>Twitter</h4>
-                            </a>
-                        </div>
-                    </div> -->
-                    <!-- //.col-xs-6 col-sm-4 col-md-2 -->
-
-                    <!-- <div class="col-xs-6 col-sm-4 col-md-2">
-                        <div class="social-icon-item text-center not-right-column top-column">
-                            <a href="#google+">
-                                <span class="social-icon">
-                                    <i class="fa fa-google-plus fa-5x"></i>
-                                </span>
-
-                                <h4>Google +</h4>
-                            </a>
-                        </div>
-                    </div> -->
-                    <!-- //.col-xs-6 col-sm-4 col-md-2 -->
-
-                    <!-- <div class="col-xs-6 col-sm-4 col-md-2">
-                        <div class="social-icon-item text-center not-right-column">
-                            <a href="#youtube">
-                                <span class="social-icon">
-                                    <i class="fa fa-youtube fa-5x"></i>
-                                </span>
-
-                                <h4>Youtube</h4>
-                            </a>
-                        </div>
-                    </div> -->
-                    <!-- //.col-xs-6 col-sm-4 col-md-2 -->
-
-                    <div class="col-xs-6 col-sm-3 col-md-2">
-                        <div class="social-icon-item text-center not-right-column">
-                            <a href="#pinterest">
-                                <span class="social-icon">
-                                    <i class="fa fa-pinterest fa-5x"></i>
-                                </span>
-
-                                <h4>Pinterest</h4>
-                            </a>
-                        </div>
-                        <!-- //.social-icon-item -->
-                    </div>
-                    <!-- //.col-xs-6 col-sm-4 col-md-2 -->
-
-                    <div class="col-xs-12 col-sm-3 col-md-2">
-                        <div class="social-icon-item text-center">
-                            <a href="#instagram">
-                                <span class="social-icon">
-                                    <i class="fa fa-instagram fa-5x"></i>
-                                </span>
-
-                                <h4>Instagram</h4>
-                            </a>
-                        </div>
-                        <!-- //.social-icon-item -->
-                    </div>
-                    <!-- //.col-xs-6 col-sm-4 col-md-2 -->
-                </div>
-                <!-- //.row -->
+      <div class="section-inner">
+        <div class="section-overlay"></div>
+        <div class="container section-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-title text-center">
+                <h3 class="main-title">Siguenos en redes sociales</h3>
+                <h4 class="sub-title">Nos gustaría saber más de tí</h4>
+                <span class="section-line"></span>
+              </div>
             </div>
-            <!-- //.section-content -->
+          </div>
+          <div class="row">
+            <div class="col-xs- col-sm-2 col-md-3"></div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="social-icon-item text-center not-right-column top-column">
+                <a target="_blank" href="">
+                  <span class="social-icon">
+                    <i class="fa fa-facebook"></i>
+                  </span>
+                  <h4>Facebook</h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+              <div class="social-icon-item text-center not-right-column">
+                <a href="#pinterest">
+                  <span class="social-icon">
+                    <i class="fa fa-pinterest fa-5x"></i>
+                  </span>
+                  <h4>Pinterest</h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-2">
+              <div class="social-icon-item text-center">
+                <a href="#instagram">
+                  <span class="social-icon">
+                    <i class="fa fa-instagram fa-5x"></i>
+                  </span>
+                  <h4>Instagram</h4>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- //.section-inner -->
+      </div>
     </section>
     <!-- //End Keep In Touch Section -->
-
-        <!-- Begin Our Latest Work Section -->
-        <section id="our-latest-work" class="section">
-            <div class="section-inner">
-                <div class="container section-content">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-title text-center">
-                                <h2 class="main-title">Nuestros productos</h2>
-                                <span class="section-line"></span>
-                            </div>
-                            <!-- //.section-title -->
-                        </div>
-                        <!-- //.col-md-12 -->
-                    </div>
-                    <!-- //.row -->
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="filter-portfolio">
-                                <ul class="list-unstyled">
-                                    <li class="active">
-                                        <a href="#" data-filter="*" class="btn btn-rj disabled">todo</a>
-                                    </li>
-                                    @foreach($categorias as $categoria)
-                                    <li class="">
-                                        <a href="#" data-filter=".{{trim($categoria->nombre)}}" class="btn btn-rj" data-categoria="{{$categoria->nombre}}">{{$categoria->nombre}}</a>
-                                    </li>
-                                    @endforeach
-
-                                    <!-- <li>
-                                        <a href="#" data-filter=".logo" class="btn btn-rj">Logo</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" data-filter=".illustration" class="btn btn-rj">Illustration</a>
-                                    </li> -->
-                                </ul>
-                            </div>
-                            <!-- //.filter-portfolio -->
-                        </div>
-                        <!-- //.col-md-12 -->
-                    </div>
-                    <!-- //.row -->
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="popup-portfolio">
-                              @foreach($productos as $producto)
-                                <div class="portfolio-item grow {{$producto->categoria}}" data-categoria="{{trim($producto->categoria)}}">
-                                    <div class="inner-content">
-                                        <div class="portfolio-content">
-                                            <div class="portfolio-detail">
-                                                <a class="download-link" target="_blank" href="/assets/images/productos/{{$producto->imagen}}" title="{{$producto->nombre}}">
-                                                    <div class="portfolio-text">
-                                                        <h4>{{$producto->nombre}}</h4>
-                                                        <p>{{strip_tags($producto->descripcion)}}</p>
-                                                    </div>
-                                                    <!-- //.portfolio-text -->
-                                                </a>
+    <!-- Begin Our Latest Work Section -->
+    <section id="our-latest-work" class="section">
+      <div class="section-inner">
+        <div class="container section-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-title text-center">
+                <h2 class="main-title">Nuestros productos</h2>
+                <span class="section-line"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="filter-portfolio">
+                <ul class="list-unstyled">
+                  <li class="active">
+                    <a href="#" data-filter="*" class="btn btn-rj disabled">todo</a>
+                  </li>
+                  @foreach($categorias as $categoria)
+                  <li class="">
+                    <a href="#" data-filter=".{{trim($categoria->nombre)}}" class="btn btn-rj" data-categoria="{{$categoria->nombre}}">{{$categoria->nombre}}</a>
+                  </li>
+                  @endforeach
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="popup-portfolio">
+                 @foreach($productos as $producto)
+                 <div class="portfolio-item grow {{$producto->categoria}}" data-categoria="{{trim($producto->categoria)}}">
+                  <div class="inner-content">
+                    <div class="portfolio-content">
+                      <div class="portfolio-detail">
+                        <a class="download-link" target="_blank" href="/assets/images/productos/{{$producto->imagen}}" title="{{$producto->nombre}}">
+                          <div class="portfolio-text">
+                            <h4>{{$producto->nombre}}</h4>
+                            <p>{{strip_tags($producto->descripcion)}}</p>
+                          </div>
+                        </a>
                                                 <div class="text-center" style="text-align:center;position:relative;">
                                                   <h6 role="button" data-id="{{$producto->id}}" class="btn btn-green86 btn-interesa" data-toggle="modal" data-target="#md-interes" style="margin-top:-39rem;">¡Me interesa!</h6>
                                                 </div>
@@ -500,15 +336,6 @@
             <!-- //.section-inner -->
         </section>
         <!-- //End Our Latest Work Section -->
-
-<!-- <hr style="color:#101010;backgroung-color:#101010;height:6rem;"> -->
-    <!-- Begin Map -->
-    <!-- <div id="map">
-        <div id="cd-google-map">
-            <div id="google-container"></div>
-        </div>
-    </div> -->
-    <!-- //End Map -->
 
         <!-- Begin blog Section -->
         <section id="our-blog" class="section" style="background-color:#ddd;">
@@ -632,11 +459,7 @@
             </div>
           </div>
         </div>
-        <div class="float-right-messenger">
-          <a data-toggle="modal" data-target="#modalPoll" class="btn">
-            <i class="fa fa-envelope" style="font-size:35px;color:#fff;padding-bottom:20px"></i> 
-          </a>
-        </div>
+        @include('components.chat.icon-chat')
     <!-- Begin Footer -->
     <footer class="footer">
         <!-- Begin Footer Section -->
@@ -672,18 +495,6 @@ LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
                                 <li>
                                     <a href="https://www.facebook.com/search/top/?q=green%2086%2C%20ecodise%C3%B1o"><i class="fa fa-facebook"></i></a>
                                 </li>
-
-                                <!-- <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><i class="fa fa-youtube"></i></a>
-                                </li> -->
 
                                 <li>
                                     <a href="#"><i class="fa fa-pinterest"></i></a>
@@ -750,8 +561,6 @@ LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
         </div>
         <!-- //End Copyright -->
     </footer>
-
-
     <div class="modal fade in" id="modalAccess" tabindex="-1" role="dialog" aria-hidden="false">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -797,56 +606,7 @@ LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
     </div>
 
     <!-- //End Footer -->
-
-    <!-- MODAL MESSENGER -->
-    <section class="section">
-      <div class="container">
-        <div class="row"> 
-              <div class="">
-                <!-- Modal: modalPoll -->
-                <div class="modal fade left" id="modalPoll" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                  aria-hidden="true" data-backdrop="false">
-                  <div class="modal-dialog modal-full-height modal-left modal-notify  modal-info" role="document" >
-                    <div class="modal-content">
-                      <!--Header-->
-                      <div class="modal-header" style="background-color:#b8c829;"
-                        <p class="heading lead text-center text-white"><strong class="text-white">¿Tienes alguna duda? Contactanos por aquí</strong>
-                        </p>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true" class="white-text">×</span>
-                        </button>
-                      </div>
-                      <!--Body-->
-                      <div class="modal-body" style="background-color:#c9e3d936">
-                        <div class="form-group">
-                          <label for="recipient-name" class="col-form-label">Últimos mensajes:</label>
-                          <div class="jumbotron">
-                            <h3>Hello, world!</h3>
-                          </div>
-                        </div>
-                          <form>
-                            <div class="form-group">
-                              <label for="message-text" class="col-form-label">Mensaje:</label>
-                              <textarea class="form-control" id="message-text"></textarea>
-                            </div>
-                          </form>
-                      </div>
-                      <!--Footer-->
-                      <div class="modal-footer justify-content-center" style="height:10%;background-color:#c9e3d936">
-                        <a  type="button" class="btn btn-primary waves-effect waves-light" >Enviar Mensaje
-                          <i class="fa fa-paper-plane ml-1"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Modal: modalPoll -->
-              </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CIERRE DEL MODAL -->
+    @include('components.chat.chatModal')
     <!-- Plugins JS -->
     <script src="libs/jquery.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
