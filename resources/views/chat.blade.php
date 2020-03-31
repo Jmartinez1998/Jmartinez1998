@@ -14,12 +14,33 @@
     <link rel="stylesheet" href="/libs/sweetalert2-master/dist/sweetalert2.css">
     @yield('styles')
 
+
+
+    <script type="text/javascript">
+		function ajax(){
+			var req = new XMLHttpRequest();
+
+			req.onreadystatechange = function(){
+				if (req.readyState == 4 && req.status == 200) {
+					document.getElementById('chat').innerHTML = req.responseText;
+				}
+			}
+
+			req.open('GET', 'chat.php', true);
+			req.send();
+		}
+
+		//linea que hace que se refreseque la pagina cada segundo
+		setInterval(function(){ajax();}, 1000);
+	</script>
+
+
     <title>
       @yield('title')
     </title>
   </head>
 
-  <body class="hold-transition skin-black fixed">
+  <body class="hold-transition skin-black fixed" onload="ajax();>
     <div class="wrapper">
       <header class="main-header">
         <a href="javascript:void(0)" class="logo">
@@ -70,27 +91,53 @@
       <div class="content-wrapper">
         <section class="content">
 
-        <div id="wrapper">
-  <div id="menu">
-        <p class="welcome">Bienvenido, <b></b></p>
-        <p class="logout"><a id="exit" href="/logout">Salir del Chat</a></p>
-        <div style="clear:both"></div>
-    </div>
-     
-    <div id="chatbox"></div>
-     
-    <form name="message" action="">
-        <input name="usermsg" type="text" id="usermsg" size="63" />
-        <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
-    </form>
-</div>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-<script type="text/javascript">
-// jQuery Document
-$(document).ready(function(){
- 
-});
-</script>
+
+
+
+
+
+
+
+
+
+        <div id="contenedor">
+		<div id="caja-chat">
+			<div id="chat"></div>
+		</div>
+
+		<form method="POST" action="index.php">
+			<input type="text" name="nombre" placeholder="Ingresa tu nombre">			
+			<textarea name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+			<input type="submit" name="enviar" value="Enviar">
+		</form>
+
+		<?php
+			if (isset($_POST['enviar'])) {
+				
+				$nombre = $_POST['nombre'];
+				$mensaje = $_POST['mensaje'];
+
+
+				$consulta = "INSERT INTO chat (nombre, mensaje) VALUES ('$nombre', '$mensaje')";
+
+				$ejecutar = $conexion->query($consulta);
+
+				if ($ejecutar) {
+					echo "<embed loop='false' src='beep.mp3' hidden='true' autoplay='true'>";
+				}
+			}
+
+		?>
+	</div>
+
+
+
+
+
+
+
+
+
 
         </section>
       </div>
@@ -119,55 +166,72 @@ $(document).ready(function(){
     <style type="text/css">
 
   
-form, p, span {
-    margin:0;
-    padding:0; }
+*{
+	padding:0;
+	margin: 0;
+	border: 2;
+}
+
+body{
+	background: #972247;
+}
+
+#contenedor{
+	width: 40%;
+	background: #fff;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-o-border-radius: 12px;
+	-webkit-border-radius: 12px;
+  border: 1px solid red;
+}
+
+#caja-chat{
+	width: 90%;
+	height: 400px;
   
-input { font:12px arial; }
-  
-a {
-    color:#0000FF;
-    text-decoration:none; }
-  
-    a:hover { text-decoration:underline; }
-  
-#wrapper, #loginform {
-    margin:0 auto;
-    padding-bottom:25px;
-    background:#EBF4FB;
-    width:504px;
-    border:1px solid #ACD8F0; }
-  
-#loginform { padding-top:18px; }
-  
-    #loginform p { margin: 5px; }
-  
-#chatbox {
-    text-align:left;
-    margin:0 auto;
-    margin-bottom:25px;
-    padding:10px;
-    background:#fff;
-    height:270px;
-    width:430px;
-    border:1px solid #ACD8F0;
-    overflow:auto; }
-  
-#usermsg {
-    width:395px;
-    border:1px solid #ACD8F0; }
-  
-#submit { width: 60px; }
-  
-.error { color: #ff0000; }
-  
-#menu { padding:12.5px 25px 12.5px 25px; }
-  
-.welcome { float:left; }
-  
-.logout { float:right; }
-  
-.msgln { margin:0 0 2px 0; }
+}
+
+#datos-chat{
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid red;
+	font-weight: bold;
+	font-family: 'Mukta Vaani', sans-serif;
+  border: 1px solid red;
+}
+
+input[type='text']{
+	width: 100%;
+	height: 40px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+input[type='submit']{
+	width: 100%;
+	height: 40px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+textarea{
+	width: 100%;
+	height: 40px;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+input, textarea{
+	margin-bottom: 3px;
+}
+
+
+
     </style>
 
   </body>
