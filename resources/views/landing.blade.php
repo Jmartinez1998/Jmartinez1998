@@ -104,35 +104,31 @@
             <div class="navbar-collapse collapse navbar-rj-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="page-scroll">
-                        <a href="#who-we-are">Acerca de nosotros</a>
+                        <a href="#who-we-are">{{__('ini.navbar.NB1')}}</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="#our-services">Servicios</a>
+                        <a href="#our-services">{{__('ini.navbar.NB2')}}</a>
                     </li>
 
                     <li class="page-scroll">
-                      <a href="#keep-in-touch">Redes sociales</a>
+                      <a href="#keep-in-touch">{{__('ini.navbar.NB3')}}</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="#our-latest-work">Nuestros Productos</a>
-                    </li>
-<!--
-                    <li class="page-scroll">
-                        <a href="#map">Ubicación</a>
-                    </li> -->
-
-                    <li class="page-scroll">
-                        <a href="#our-blog">Noticas</a>
+                        <a href="#our-latest-work">{{__('ini.navbar.NB4')}}</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="/blog" onclick="window.location = '/blog'">Blog</a>
+                        <a href="#our-blog">{{__('ini.navbar.NB5')}}</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a  href data-toggle="modal" data-target="#modalAccess">Entrar</a>
+                        <a href="/blog" onclick="window.location = '/blog'">{{__('ini.navbar.NB6')}}</a>
+                    </li>
+
+                    <li class="page-scroll">
+                        <a  href data-toggle="modal" data-target="#modalAccess">{{__('ini.navbar.LOG')}}</a>
                     </li>
                 </ul>
             </div>
@@ -150,9 +146,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center">
-                            <h2 class="main-title"><strong>¿Quienes Somos?</strong></h2>
+                            <h2 class="main-title"><strong>{{__('ini.Q')}}</strong></h2>
 
-                            <h3 class="sub-title"><strong>QUEREMOS CONTARTE UN POCO DE NOSOTROS</strong></h3>
+                            <h3 class="sub-title"><strong>{{__('ini.IFO_N')}}</strong></h3>
 
                             <span class="section-line"></span>
                         </div>
@@ -184,13 +180,9 @@
 
                     <div class="col-md-6">
                         <div class="who-we-are-text">
-                            <h4>Estamos contigo</h4>
-
-                            <p>Estamos contigo.
-                            En Audi de México y su red de concesionarios actuamos con responsabilidad y
-                            tomamos las medidas necesarias de acuerdo con las recomendaciones de la OMS y 
-                            las autoridades correspondientes para seguir operando de forma habitual,
-                            así podremos brindarte nuestro servicio y asesoría..</p>
+                            <h4>{{__('ini.BODY1_TITLE')}}</h4>
+                            <h2>{{__('ini.AUDI_LAG')}}</h2>	
+                            <p>{{__('ini.BODY_QUIENES_SOMOS')}}</p>
                             <!-- //.page-scroll -->
                         </div>
                         <!-- //.who-we-are-text -->
@@ -218,9 +210,9 @@
                                 <i class="fa fa-quote-right fa-4x"></i>
                             </span>
 
-                            <h2 style="color:#fff">"A la vanguardia a través de la tecnología".</h2>
+                            <h2 style="color:#fff">"{{__('ini.BODY2')}}".</h2>
 
-                            <a href="#our-latest-work" class="btn btn-green86">¡Me interesa!</a>
+                            <a href="#our-latest-work" class="btn btn-green86">{{__('ini.btn.INTERES')}}</a>
                         </div>
                         <!-- //.quote-text -->
                     </div>
@@ -243,9 +235,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-title text-center">
-                                <h3 class="main-title">Nuestros Servicios</h3>
+                                <h3 class="main-title">{{__('ini.SERV')}}</h3>
 
-                                <h4 class="sub-title">Somos expertos desarrollando tus productos</h4>
+                                <h4 class="sub-title">{{__('ini.SERV_BODY')}}</h4>
 
                                 <span class="section-line"></span>
                             </div>
@@ -265,10 +257,9 @@
                                 </span>
 
                                 <div class="funny-boxes-text">
-                                    <h4>Servicio de seguimiento Online</h4>
+                                    <h4>{{__('ini.B_SERVICIOS.HEAD')}}</h4>
 
-                                    <p>Te ofrecemos el servicio completo de mensajeria instantanea para que asi puedas dar seguimiento a cualquier tramite en tu vehiculo,
-                                        desde cualquier informe, asesoramiento, hasta un servicio a tu coche o compra.</p>
+                                    <p>{{__('ini.B_SERVICIOS.BOD')}}</p>
                                 </div>
                                 <!-- //.funny-boxes-text -->
                             </div>
@@ -283,9 +274,9 @@
                                 </span>
 
                                 <div class="funny-boxes-text">
-                                    <h4>Línea propia.</h4>
+                                    <h4>{{__('ini.B_SERVICIOS.HEAD_2')}}</h4>
 
-                                    <p>Ofrecemos nuestra propia linea de vehiculos de la más alta calidad y tecnologia.</p>
+                                    <p>{{__('ini.B_SERVICIOS.BOD2')}}</p>
                                 </div>
                                 <!-- //.funny-boxes-text -->
                             </div>
@@ -312,9 +303,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center">
-                            <h3 class="main-title">Siguenos en redes sociales</h3>
+                            <h3 class="main-title">{{__('ini.REDS')}}</h3>
 
-                            <h4 class="sub-title">Nos gustaría saber más de tí</h4>
+                            <h4 class="sub-title">{{__('ini.INFO')}}</h4>
 
                             <span class="section-line"></span>
                         </div>
