@@ -1,22 +1,9 @@
-<!-- Ancho Máximo 767px -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="shortcut icon" href="/assets/images/logo-banner.png">
-    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/styles/admin/stack/admin.min.css">
-    <link rel="stylesheet" href="/styles/admin/stack/skins/skin-black.min.css">
-    <link rel="stylesheet" href="/styles/admin/css/admin-gral.css">
-    <link rel="stylesheet" href="/libs/sweetalert2-master/dist/sweetalert2.css">
-    @yield('styles')
+@extends('templates.admin')
 
-
-
-    <script type="text/javascript">
+@section('styles')
+  <link rel="stylesheet" href="/libs/datatables/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="/styles/section/css/section.css">
+  <script type="text/javascript">
 		function ajax(){
 			var req = new XMLHttpRequest();
 
@@ -33,74 +20,26 @@
 		//linea que hace que se refreseque la pagina cada segundo
 		setInterval(function(){ajax();}, 1000);
 	</script>
+@stop
 
+@section('title')
+  Chats - Audi Laguna
+@stop 
 
-    <title>
-      @yield('title')
-    </title>
-  </head>
-
-  <body class="hold-transition skin-black fixed" onload="ajax();>
-    <div class="wrapper">
-      <header class="main-header">
-        <a href="javascript:void(0)" class="logo">
-          <span class="logo-lg"><b>Audi Laguna</b></span>
-        </a>
-
-        <nav class="navbar navbar-static-top" role="navigation">
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-            <span class="sr-only">Menú</span>
-          </a>
-          <div class="navbar-custom-menu">
-            <ul class="nav navbar-nav">
-            </ul>
+@section('content')
+  <section class="row section-table">
+    <div class="col-xs-12">
+      <div class="box">
+        <div class="box-header">
+          <h3 class="box-title">Historial de chats</h3>
+          <div class="pull-right">
           </div>
-        </nav>
-      </header>
-      <aside class="main-sidebar">
-        <section class="sidebar">
-          <ul class="sidebar-menu">
-            <li class="active li-menu" id="li-blog">
-              <a href="/admin/secciones">
-                <i class="fa fa-link"></i>
-                <span>Blog</span>
-              </a>
-            </li>
-            <li class="li-menu" id="li-catalogo">
-              <a href="#">
-                <i class="fa fa-link"></i>
-                <span>Cátalogo de producto</span>
-              </a>
-            </li>
-            <li class="li-menu" id="li-catalogo">
-              <a href="/Chat">
-                <i class="fa fa-link"></i>
-                <span>Chats</span>
-              </a>
-            </li>
-            <li class="li-menu">
-              <a href="/logout">
-                <i class="fa fa-sign-out"></i>
-                <span>Cerrar session</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </aside>
-
+          <br>
+        </div>
+        <div class="box-body">
       <div class="content-wrapper">
         <section class="content">
-
-
-
-
-
-
-
-
-
-
-        <div id="contenedor">
+          <div id="contenedor">
 		<div id="caja-chat">
 			<div id="chat"></div>
 		</div>
@@ -129,36 +68,83 @@
 
 		?>
 	</div>
-
-
-
-
-
-
-
-
-
-
         </section>
       </div>
-
-      <footer class="main-footer">
-        <strong>
-          Copyright &copy; 2017
-          <a href="https://www.supernovaapps.com.mx">Supernova Apps</a>
-        </strong>
-        | Todos los derechos reservados.
-      </footer>
-
+          </table>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <script src="/libs/jQuery/jquery-2.2.3.min.js"></script>
-    <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/libs/slimScroll/jquery.slimscroll.min.js"></script>
-    <script src="/libs/fastclick/fastclick.js"></script>
-    <script src="/scripts/app.min.js"></script>
-    <script src="/scripts/admin/admin.js" charset="utf-8"></script>
-    <script src="/libs/sweetalert2-master/dist/sweetalert2.js" charset="utf-8"></script>
+<!-- Detalles de la seccion y agregar nuevo -->
+  <section class="row admin-section">
+    <div class="col-xs-12">
+      <div class="box">
+
+        <div class="box-header">
+          <h3 class="box-title">
+            Agregar nueva categoría
+          </h3>
+        </div>
+
+        <div class="box-body">
+          <form name="form-section">
+            <div class="form-group">
+              <label>Título de la categoría</label>
+              <input type="text" name="titulo" class="form-control" autofocus>
+            </div>
+          </form>
+          <form name="form-imagen" hidden="hidden" id="form-imagen">
+            <input type="file" name="imagen" id="imagen">
+          </form>
+        </div>
+
+        <div class="box-footer">
+          <div class="text-right">
+            <button type="button" name="conf-cancel" class="btn btn-warning conf-display">
+              <span class="fa fa-trash"></span>&nbsp;
+              Cancelar
+            </button>
+            <button type="button" name="saveCategoria" class="btn btn-primary">
+              <span class="fa fa-check"></span>&nbsp;
+              Guardar Categoría
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="row section-preview">
+    <div class="col-md-12">
+      <div class="back-section">
+        <button name="back-conf" class="btn btn-primary btn-preview">
+          <span class="fa fa-arrow-left"></span>&nbsp;
+          Regresar
+        </button><br><br>
+      </div>
+      <div class="box">
+        <div class="box-body">
+          <div id="preview"></div>
+          @for ($i=0; $i < 3; $i++)
+          <div class="col-md-4">
+            <img src="/assets/images/system/post.png" class="img-responsive">
+            {{-- <div id="preview-posts"></div> --}}
+          </div>
+          @endfor
+        </div>
+      </div>
+    </div>
+  </section>
+
+      @stop
+
+      @section('scripts')
+        <script src="/libs/datatables/jquery.dataTables.min.js"></script>
+        <script src="/libs/datatables/dataTables.bootstrap.min.js"></script>
+        <script src="/libs/tinymce/js/tinymce/tinymce.min.js" charset="utf-8"></script>
+        <script src="/scripts/catalogo/categoria.js" charset="utf-8"></script>
+      @stop
 
     @yield('scripts')
 
