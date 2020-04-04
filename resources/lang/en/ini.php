@@ -13,7 +13,7 @@
             "NB4" => "Nuestros Productos",
             "NB5" => "Noticas",
             "NB6" => "Blog",
-            'LOG' => 'Entrar'
+            'LOG' => 'Ingresar'
         ],
         'btn' =>[
             'INTERES' => '¡Me interesa!'

@@ -162,12 +162,47 @@
                     <div class="col-md-6">
                         <div id="carousel-who-we-are" class="owl-carousel owl-theme">
                             <div class="item">
-                                <img src="assets/images/system/1.jpeg" alt="" class="img-responsive img-rounded"/>
+                                <img src="assets/images/system/A1.jpg" alt="" class="img-responsive img-rounded"/>
                             </div>
                             <!-- //.item -->
 
                             <div class="item">
-                                <img src="assets/images/system/2.jpg" alt="" class="img-responsive img-rounded"/>
+                                <img src="assets/images/system/A3.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/A4.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/A6.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/A7.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/AQ3.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/AT.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/Q2.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/Q3.jpg" alt="" class="img-responsive img-rounded"/>
                             </div>
                             <!-- //.item -->
 
