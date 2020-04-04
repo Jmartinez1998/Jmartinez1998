@@ -97,7 +97,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="#page-top"><img src="/assets/images/logo-banner.png" class="img-fluid img-responsive img-logo-banner" style="width:14rem;height:4.5rem;margin-top:1rem;margin-bottom:1rem;" alt=""></a>
+                <a class="navbar-brand" href="#page-top"><img src="/assets/images/system/bg2.png" class="img-fluid img-responsive img-logo-banner" style="width:14rem;height:4.5rem;margin-top:1rem;margin-bottom:1rem;" alt=""></a>
             </div>
             <!-- //.navbar-header -->
 
@@ -545,9 +545,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-title text-center">
-                                <h3 class="main-title">Nuestro Blog</h3>
+                                <h3 class="main-title">LO NUEVO-2020</h3>
 
-                                <h4 class="sub-title">Visita nuestro Blog y conoce más</h4>
+                                <h4 class="sub-title">Los asientos deportivos con despuntado en forma de rombo, volante tapizado en Alcántara con una sutil franja de piel resaltando las 12 horas, la consola central, las puertas… el cuero negro domina todo el espacio. El tono cobre brillante de las costuras inunda el interior y crea un ambiente de calma que, además, es totalmente exclusivo. Por último, las inserciones en carbono brillante aportan el toque perfecto en consonancia con el exterior.</h4>
 
                                 <span class="section-line"></span>
                             </div>
@@ -601,7 +601,7 @@
                     </div>
                     <!-- //.row -->
                     <center class="center-button">
-                      <a href="/blog" class="btn btn-green86 btn-lg">Visitar Blog</a>
+                      <a href="/blog" class="btn btn-green86 btn-lg">Mas Información...</a>
                     </center>
                 </div>
                 <!-- //.section-content -->
