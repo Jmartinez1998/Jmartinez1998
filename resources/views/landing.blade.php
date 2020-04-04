@@ -803,12 +803,12 @@ LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
                     <input type="password" class="form-control" id="pass">
                   </div>
                   <div class="form-group text-right">
-                    <button type="button" class="btn btn-warning" data-dismiss="modal" id="btnRegister">
-                      <span class="fa fa-check"></span>
-                      Cancelar
+                    <button type="button" class="btn btn-warning" style="background-color:#d53b19; border-color:#fff" data-dismiss="modal" id="btnRegister">
+                      <span class="fa fa-arrow-left"></span>
+                      Regresar
                     </button>
-                    <button type="button" class="btn btn-success" id="btnLogin">
-                      <span class="fa fa-arrow-right"></span>
+                    <button type="button" class="btn btn-success" style="background-color:#000; border-color:#fff" id="btnLogin">
+                      <span class="fa fa-check"></span>
                       Entrar
                     </button>
                   </div>
