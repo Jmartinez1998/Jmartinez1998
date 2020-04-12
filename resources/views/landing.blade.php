@@ -546,9 +546,47 @@
                         <div class="col-md-12">
                             <div class="section-title text-center">
                                 <h3 class="main-title">LO NUEVO-2020</h3>
+                                        
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="who-we-are-text animated fadeInUp delayp3" style="opacity: 2;">
+                                                <h4>Estamos contigo</h4>
+                                                <p>Los asientos deportivos con despuntado en forma de rombo, volante tapizado en Alcántara con una sutil franja de piel resaltando las 12 horas, la consola central, las puertas… el cuero negro domina todo el espacio. El tono cobre brillante de las costuras inunda el interior y crea un ambiente de calma que, además, es totalmente exclusivo. Por último, las inserciones en carbono brillante aportan el toque perfecto en consonancia con el exterior.</p>
+                                                <!-- //.page-scroll -->
+                                            </div>
+                                            <!-- //.who-we-are-text -->
+                                        </div>
+                                        <!-- //.col-md-6 -->
+                                        <div class="col-md-6">
+                                            <div id="carousel-who-we-are" class="owl-carousel owl-theme animated fadeInUp delayp1" style="opacity: 1; display: block;">
+                                                <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 9990px; left: 0px; display: block; transition: all 400ms ease 0s; transform: translate3d(-3885px, 0px, 0px);"><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/A1.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/A3.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/A4.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/A6.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/A7.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/AQ3.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/AT.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/Q2.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/Q3.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div></div></div>
+                                                
+                                                <!-- //.item -->
+                                            <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+                                            <!-- //.owl-carousel -->
+                                        </div>
+                                        <!-- //.col-md-6 -->
 
-                                <h4 class="sub-title">Los asientos deportivos con despuntado en forma de rombo, volante tapizado en Alcántara con una sutil franja de piel resaltando las 12 horas, la consola central, las puertas… el cuero negro domina todo el espacio. El tono cobre brillante de las costuras inunda el interior y crea un ambiente de calma que, además, es totalmente exclusivo. Por último, las inserciones en carbono brillante aportan el toque perfecto en consonancia con el exterior.</h4>
 
+                                    </div>
                                 <span class="section-line"></span>
                             </div>
                             <!-- //.section-title -->
