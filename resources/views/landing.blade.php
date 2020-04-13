@@ -639,7 +639,7 @@
                     </div>
                     <!-- //.row -->
                     <center class="center-button">
-                      <a href="/blog" class="btn btn-green86 btn-lg">Mas Información...</a>
+                      <a href="/blog" class="btn btn-green86 btn-lg">Más Información...</a>
                     </center>
                 </div>
                 <!-- //.section-content -->
@@ -717,7 +717,7 @@
                                 </li>
 
                                 <li>
-                                    <i class="fa fa-envelope-o"></i> audi-laguna@audi.com
+                                    <i class="fa fa-envelope-o"></i> audi-laguna@audi.com.mx
                                 </li>
 
                                 <li>
@@ -725,8 +725,7 @@
                                 </li>
 
                                 <li>
-                                    <i class="fa fa-clock-o"></i> HORARIOS:
-LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
+                                    <i class="fa fa-clock-o"></i> HORARIOS: LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
                                 </li>
                             </ul>
 
@@ -801,8 +800,14 @@ LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
         <div id="copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <p>UTT JLMR,JLM,KBD,IS &copy; {{Date('Y')}} <a href="#">Audi Laguna.</a></p>
+                    <div class="col-md-4" style="">
+
+                    </div>
+                    <div class="col-md-4" style="">
+                        <p>UTT | Project - JLMR-JLMM-KABD-IEPV &copy; {{Date('Y')}} <a href="#">Audi Laguna.</a></p>
+                    </div>
+                    <div class="col-md-4" style="">
+
                     </div>
                     <!-- //.col-md-12 -->
                 </div>
