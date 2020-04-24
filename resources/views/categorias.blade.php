@@ -7,7 +7,7 @@
 
 @section('title')
   Categorias - Audi Laguna
-@stop
+@stop 
 
 @section('content')
   <section class="row section-table">
