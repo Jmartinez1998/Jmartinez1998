@@ -60,4 +60,6 @@ Route::post("/send-messaege",'LoginController@sendMessage');
 Route::get('/', ['as' => 'login', 'uses' => 'LoginController@landing']);
 
 //Ruta del chat
-Route::get("/Chat","ChatController@Chat");
+Route::get("/Chat","ChatController@Chat"); 
+Route::get('chat', 'ChatController@show')->name('landing.chat');
+
