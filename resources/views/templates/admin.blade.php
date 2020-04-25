@@ -21,7 +21,7 @@
 
   <body class="hold-transition skin-black fixed">
     <div class="wrapper">
-      <header class="main-header">
+      <header class="main-header">  
         <a href="javascript:void(0)" class="logo">
           <span class="logo-lg"><b>Audi Laguna</b></span>
         </a>
@@ -32,6 +32,7 @@
           </a>
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
+              
             </ul>
           </div>
         </nav>
@@ -46,9 +47,9 @@
               </a>
             </li>
             <li class="li-menu" id="li-catalogo">
-              <a href="#">
+              <a href="/admin/categorias">
                 <i class="fa fa-link"></i>
-                <span>Cátalogo de producto</span>
+                <span>Cátalogos y productos</span>
               </a>
             </li>
             <li class="li-menu" id="li-catalogo">
