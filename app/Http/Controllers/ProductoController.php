@@ -7,6 +7,7 @@ use DB;
 use Validator;
 use App\Producto;
 use App\Categoria;
+use App\ProductCategoria;
 use Illuminate\Http\Request;
 
 class ProductoController extends Controller
@@ -111,4 +112,10 @@ class ProductoController extends Controller
     $Productos = Producto::where('estatus', '=', 1)->where('categoria_id', '=', $id)->get();
     return view('productos', ['productos' => $Productos, 'categoria' => Categoria::find($id)]);
   }
+  public function search(Request $search)
+  {
+      $products = Producto::where('nombre','like','%'.$search->input('search').'%');
+      return view('products', compact('products'));
+  }
+
 }

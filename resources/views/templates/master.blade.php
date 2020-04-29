@@ -2,7 +2,7 @@
 <html class="no-js" lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Green 86 - @yield('title')</title>
+    <title>Audi- @yield('title')</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Google Font -->

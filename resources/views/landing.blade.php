@@ -102,7 +102,7 @@
             <!-- //.navbar-header -->
 
             <div class="navbar-collapse collapse navbar-rj-collapse">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav ">
                     <li class="page-scroll">
                         <a href="#who-we-are">{{__('ini.navbar.NB1')}}</a>
                     </li>
@@ -115,10 +115,7 @@
                       <a href="#keep-in-touch">{{__('ini.navbar.NB3')}}</a>
                     </li>
 
-                    <li class="page-scroll">
-                        <a href="#our-latest-work">{{__('ini.navbar.NB4')}}</a>
-                    </li>
-
+                  
                     <li class="page-scroll">
                         <a href="#our-blog">{{__('ini.navbar.NB5')}}</a>
                     </li>
@@ -131,6 +128,11 @@
                         <a  href data-toggle="modal" data-target="#modalAccess">{{__('ini.navbar.LOG')}}</a>
                     </li>
                 </ul>
+                <form class="form-inline my-2 my-lg-0" style="padding-top: 1rem;"action="{{route('products.search')}}" method="GET" id="search-form">
+                    @csrf
+                    <input class="form-control mr-sm-2" type="search" placeholder="Descubre" aria-label="Search">
+                    <a type="button" class="btn btn-outline-success my-2 my-sm-0 fa fa-search" type="submit"  onclick="document.getElementById('search-form').submit();"></a>
+                  </form>
             </div>
             <!-- //.navbar-collapse -->
         </div>
@@ -457,7 +459,7 @@
                         <!-- //.col-md-12 -->
                     </div>
                     <!-- //.row -->
-
+                    
                     <div class="row">
                         <div class="col-md-12">
                             <div class="filter-portfolio">
