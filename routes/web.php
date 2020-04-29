@@ -63,3 +63,7 @@ Route::get('/', ['as' => 'login', 'uses' => 'LoginController@landing']);
 
 //Ruta del chat
 Route::get("/Chat","ChatController@Chat");
+
+
+//Search
+Route::get('buscar', 'ProductoController@search')->name('products.search');

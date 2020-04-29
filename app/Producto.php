@@ -3,7 +3,17 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Producto extends Model{
-  //al code here
+class Producto extends Model
+{
+  /**
+     * Belongs to category
+     * @return BelongsTo
+     */
+    public function category()
+    {
+        return $this->belongsTo(ProductCategoria::class, 'categoria_id');
+    }
+
 }
