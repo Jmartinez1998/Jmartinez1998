@@ -78,8 +78,8 @@
 
       <footer class="main-footer">
         <strong>
-          Copyright &copy; 2017
-          <a href="https://www.supernovaapps.com.mx">Supernova Apps</a>
+          Copyright &copy; 2020
+          <a href="#">UTT Proyecto</a>
         </strong>
         | Todos los derechos reservados.
       </footer>

@@ -120,7 +120,7 @@ $(function () {
             $btnCancel.prop("disabled", false);
             swal(
               'Upps!',
-              'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos http://www.supernovaapps.com.mx',
+              'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos',
               'error'
             );
             break;
@@ -128,7 +128,7 @@ $(function () {
       } catch (e) {
         swal(
           'Upps!',
-          'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos http://www.supernovaapps.com.mx',
+          'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos',
           'error'
         );
       }
@@ -177,7 +177,7 @@ $(function () {
       .fail(function(err){
         swal(
           'Upps!',
-          'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos http://www.supernovaapps.com.mx',
+          'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos',
           'error'
         );
         console.log(err);
@@ -215,7 +215,7 @@ $(function () {
           default:
             swal(
               'Upps!',
-              'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos http://www.supernovaapps.com.mx',
+              'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos',
               'error'
           );
             break;
@@ -224,7 +224,7 @@ $(function () {
         console.log(e);
         swal(
           'Upps!',
-          'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos http://www.supernovaapps.com.mx',
+          'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos',
           'error'
         );
       }
@@ -232,7 +232,7 @@ $(function () {
     .fail(function(err){
       swal(
         'Upps!',
-        'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos http://www.supernovaapps.com.mx',
+        'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos',
         'error'
       );
       console.log(err);
