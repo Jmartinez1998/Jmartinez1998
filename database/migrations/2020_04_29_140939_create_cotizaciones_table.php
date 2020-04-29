@@ -16,7 +16,7 @@ class CreateCotizacionesTable extends Migration
         Schema::create('cotizaciones', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre');
-            $table->string('correo');
+            $table->string('email');
             $table->double('cantidad');
             $table->text('mensaje');
             $table->date('fecha');
