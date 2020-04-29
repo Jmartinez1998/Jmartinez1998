@@ -1,8 +1,9 @@
-<div class="modal fade" id="modalPoll" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalPoll" tabindex="-1" style="background-image:url(/assets/images/system/cotzr.jpg); background-size:cover" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
+      <div class="modal-content" style="background-color:#80717170">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Cotiza aquí tú producto</h5>
+        <a class="navbar-brand" href="#page-top"><img src="/assets/images/system/bg2.png" class="img-fluid img-responsive img-logo-banner" style="width:8rem;" alt=""></a>
+          <h5 class="modal-title" id="exampleModalLabel" style="float:center">Cotiza aquí tú producto</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
