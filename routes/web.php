@@ -70,3 +70,5 @@ Route::get('buscar', 'ProductoController@search')->name('products.search');
 
 //Cotizacion
 Route::post('send', 'CotizacionController@send')->name('correo.cotizacion');
+Route::get("/Chat","ChatController@Chat"); 
+Route::get('chat', 'ChatController@show')->name('landing.chat');
