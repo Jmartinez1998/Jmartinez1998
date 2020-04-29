@@ -15,10 +15,11 @@
           cluster: 'eu',
           forceTLS: true
         });
-    
-        var channel = pusher.subscribe('chat-channel');
-        channel.bind('chat-event', function(data) {
+       
+        var channel = pusher.subscribe('chat1-channel');
+        channel.bind('chat1-event', function(data) {
           alert(JSON.stringify(data));
         });
+
       </script>
 </div>

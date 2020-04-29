@@ -27,10 +27,10 @@ class SendMessage implements ShouldBroadcast
 
     public function broadcastOn()
     {
-        return new Channel('chat-channel') ;
+        return 'chat1-channel';
     }
     public function broadcastAs()
     {
-        return "chat-event";
+        return "chat1-event";
     }
 }

@@ -46,7 +46,7 @@
               </a>
             </li>
             <li class="li-menu" id="li-catalogo">
-              <a href="#">
+              <a href="/admin/categorias#">
                 <i class="fa fa-link"></i>
                 <span>Cátalogo de producto</span>
               </a>
