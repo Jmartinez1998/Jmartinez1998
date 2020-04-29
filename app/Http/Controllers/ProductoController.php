@@ -114,7 +114,7 @@ class ProductoController extends Controller
   }
   public function search(Request $search)
   {
-      $products = Producto::where('nombre','like','%'.$search->input('search').'%');
+      $products = Producto::where('nombre','like','%'.$search->input('search').'%')->get();
       return view('products', compact('products'));
   }
 

@@ -104,16 +104,19 @@
     </nav>
     <!-- //End Navbar -->
 
-
+    @isset($products)
+    @foreach($products as $product)
+    {{$product}}
     <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+    <img src="/assets/images/productos/{{$product->imagen}}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">{{$product->nombre}}</h5>
+          <p class="card-text">{!!$product->descripcion!!}</p>
+          <a href="#" class="btn btn-primary">Cotización</a>
         </div>
       </div>
-
+      @endforeach
+      @endisset
         <div class="modal fade in" id="md-interes" tabindex="-1" role="dialog" aria-hidden="false">
           <div class="modal-dialog">
             <div class="modal-content">
