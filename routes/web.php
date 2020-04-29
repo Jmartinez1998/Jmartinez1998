@@ -16,13 +16,15 @@ Route::get("/blog",'SectionController@blog');
 Route::get("/post/{id}",'PostController@post');
 Route::get("/seccion/{id}",'SectionController@seccion');
 Route::group(['middleware' => 'auth'], function () {
-    //
+    
+    //crud Secciones
     Route::get('/admin/secciones', 'SectionController@sendAdminView');
     Route::post('/section-info', 'SectionController@getInfo');
     Route::post('/section-create', 'SectionController@create');
     Route::post('/section-update', 'SectionController@update');
     Route::post('/section-delete', 'SectionController@delete');
 
+    //crud posts
     Route::get('/admin/post/{id}','PostController@viewPostAdmin');
     Route::post('/post-info', 'PostController@getInfo');
     Route::post('/post-create', 'PostController@create');

@@ -11,9 +11,9 @@
             "NB2" => "Servicios",
             "NB3" => "Redes sociales",
             "NB4" => "Nuestros Productos",
-            "NB5" => "Noticas",
+            "NB5" => "Lo Nuevo",
             "NB6" => "Blog",
-            'LOG' => 'Entrar'
+            'LOG' => 'Ingresar'
         ],
         'btn' =>[
             'INTERES' => '¡Me interesa!'
@@ -39,6 +39,7 @@
         'REDS' => 'Siguenos en redes sociales',
         'INFO' => 'Nos gustaría saber más de tí',
         'Q' => '¿Quienes Somos?',
-        'IFO_N' => 'QUEREMOS CONTARTE UN POCO DE NOSOTROS'
+        'IFO_N' => 'QUEREMOS CONTARTE UN POCO DE NOSOTROS',
+        'COMING_BODY' => 'Los asientos deportivos con despuntado en forma de rombo, volante tapizado en Alcántara con una sutil franja de piel resaltando las 12 horas, la consola central, las puertas… el cuero negro domina todo el espacio. El tono cobre brillante de las costuras inunda el interior y crea un ambiente de calma que, además, es totalmente exclusivo. Por último, las inserciones en carbono brillante aportan el toque perfecto en consonancia con el exterior.        '
 
     ];

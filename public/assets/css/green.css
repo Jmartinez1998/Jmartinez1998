@@ -689,7 +689,7 @@ span.navbar-trigger-close a:hover {
   width: 100%;
   height: auto;
   color: #fff;
-  background-image: url("/assets/images/system/audiini.jpg");
+  background-image: url("/assets/images/system/back0.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -867,7 +867,7 @@ span.navbar-trigger-close a:hover {
 /*  9. QUOTE SECTION
 /*---------------------------------------------------------------------*/
 #quote {
-  background-image: url("/assets/images/system/little-girl-2516582_1920.jpg");
+  background-image: url("/assets/images/system/back1.jpg");
 }
 #quote > .section-inner .section-content {
   padding-top: 100px;
@@ -890,7 +890,7 @@ span.navbar-trigger-close a:hover {
 /*  10. KEEP IN TOUCH SECTION
 /*---------------------------------------------------------------------*/
 #keep-in-touch {
-  background-image: url("/assets/images/system/background-1606047_1920.jpg");
+  background-image: url("/assets/images/system/back.jpg");
 }
 #keep-in-touch > .section-inner .section-content .section-title {
   color: #b7ada4;

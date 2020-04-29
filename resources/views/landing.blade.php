@@ -97,7 +97,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="#page-top"><img src="/assets/images/logo-banner.png" class="img-fluid img-responsive img-logo-banner" style="width:14rem;height:4.5rem;margin-top:1rem;margin-bottom:1rem;" alt=""></a>
+                <a class="navbar-brand" href="#page-top"><img src="/assets/images/system/bg2.png" class="img-fluid img-responsive img-logo-banner" style="width:14rem;height:4.5rem;margin-top:1rem;margin-bottom:1rem;" alt=""></a>
             </div>
             <!-- //.navbar-header -->
 
@@ -162,12 +162,47 @@
                     <div class="col-md-6">
                         <div id="carousel-who-we-are" class="owl-carousel owl-theme">
                             <div class="item">
-                                <img src="assets/images/system/1.jpeg" alt="" class="img-responsive img-rounded"/>
+                                <img src="assets/images/system/A1.jpg" alt="" class="img-responsive img-rounded"/>
                             </div>
                             <!-- //.item -->
 
                             <div class="item">
-                                <img src="assets/images/system/2.jpg" alt="" class="img-responsive img-rounded"/>
+                                <img src="assets/images/system/A3.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/A4.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/A6.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/A7.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/AQ3.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/AT.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/Q2.jpg" alt="" class="img-responsive img-rounded"/>
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <img src="assets/images/system/Q3.jpg" alt="" class="img-responsive img-rounded"/>
                             </div>
                             <!-- //.item -->
 
@@ -510,10 +545,48 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-title text-center">
-                                <h3 class="main-title">Nuestro Blog</h3>
+                                <h3 class="main-title">LO NUEVO-2020</h3>
+                                        
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="who-we-are-text animated fadeInUp delayp3" style="opacity: 2;">
+                                                <h4>Estamos contigo</h4>
+                                                <p>Los asientos deportivos con despuntado en forma de rombo, volante tapizado en Alcántara con una sutil franja de piel resaltando las 12 horas, la consola central, las puertas… el cuero negro domina todo el espacio. El tono cobre brillante de las costuras inunda el interior y crea un ambiente de calma que, además, es totalmente exclusivo. Por último, las inserciones en carbono brillante aportan el toque perfecto en consonancia con el exterior.</p>
+                                                <!-- //.page-scroll -->
+                                            </div>
+                                            <!-- //.who-we-are-text -->
+                                        </div>
+                                        <!-- //.col-md-6 -->
+                                        <div class="col-md-6">
+                                            <div id="carousel-who-we-are" class="owl-carousel owl-theme animated fadeInUp delayp1" style="opacity: 1; display: block;">
+                                                <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 9990px; left: 0px; display: block; transition: all 400ms ease 0s; transform: translate3d(-3885px, 0px, 0px);"><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/A1.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/A3.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/A4.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/A6.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/A7.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/AQ3.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/AT.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/Q2.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div><div class="owl-item" style="width: 555px;"><div class="item">
+                                                    <img src="assets/images/system/Q3.jpg" alt="" class="img-responsive img-rounded">
+                                                </div></div></div></div>
+                                                
+                                                <!-- //.item -->
+                                            <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+                                            <!-- //.owl-carousel -->
+                                        </div>
+                                        <!-- //.col-md-6 -->
 
-                                <h4 class="sub-title">Visita nuestro Blog y conoce más</h4>
 
+                                    </div>
                                 <span class="section-line"></span>
                             </div>
                             <!-- //.section-title -->
@@ -566,7 +639,7 @@
                     </div>
                     <!-- //.row -->
                     <center class="center-button">
-                      <a href="/blog" class="btn btn-green86 btn-lg">Visitar Blog</a>
+                      <a href="/blog" class="btn btn-green86 btn-lg">Más Información...</a>
                     </center>
                 </div>
                 <!-- //.section-content -->
@@ -644,7 +717,7 @@
                                 </li>
 
                                 <li>
-                                    <i class="fa fa-envelope-o"></i> audi-laguna@audi.com
+                                    <i class="fa fa-envelope-o"></i> audi-laguna@audi.com.mx
                                 </li>
 
                                 <li>
@@ -652,8 +725,7 @@
                                 </li>
 
                                 <li>
-                                    <i class="fa fa-clock-o"></i> HORARIOS:
-LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
+                                    <i class="fa fa-clock-o"></i> HORARIOS: LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
                                 </li>
                             </ul>
 
@@ -728,8 +800,14 @@ LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
         <div id="copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <p>UTT JLMR,JLM,KBD,IS &copy; {{Date('Y')}} <a href="#">Audi Laguna.</a></p>
+                    <div class="col-md-4" style="">
+
+                    </div>
+                    <div class="col-md-4" style="">
+                        <p>UTT | Project - JLMR-JLMM-KABD-IEPV &copy; {{Date('Y')}} <a href="#">Audi Laguna.</a></p>
+                    </div>
+                    <div class="col-md-4" style="">
+
                     </div>
                     <!-- //.col-md-12 -->
                 </div>
@@ -768,12 +846,12 @@ LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
                     <input type="password" class="form-control" id="pass">
                   </div>
                   <div class="form-group text-right">
-                    <button type="button" class="btn btn-warning" data-dismiss="modal" id="btnRegister">
-                      <span class="fa fa-check"></span>
-                      Cancelar
+                    <button type="button" class="btn btn-warning" style="background-color:#d53b19; border-color:#fff" data-dismiss="modal" id="btnRegister">
+                      <span class="fa fa-arrow-left"></span>
+                      Regresar
                     </button>
-                    <button type="button" class="btn btn-success" id="btnLogin">
-                      <span class="fa fa-arrow-right"></span>
+                    <button type="button" class="btn btn-success" style="background-color:#000; border-color:#fff" id="btnLogin">
+                      <span class="fa fa-check"></span>
                       Entrar
                     </button>
                   </div>

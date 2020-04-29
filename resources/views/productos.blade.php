@@ -71,6 +71,7 @@
   </section>
 
   <!-- Detalles de la seccion y agregar nuevo -->
+    
   <section class="row admin-section">
     <div class="col-xs-12">
       <div class="box">
