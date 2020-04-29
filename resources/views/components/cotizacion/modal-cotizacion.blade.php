@@ -10,6 +10,12 @@
         <div class="modal-body">
           <form>
               <div class="row">
+                <div class="col-md-8">
+                </div>
+                <div class="col-md-4">
+                    <label>Fecha {{ date('Y-m-d') }}</label>
+                    <input type="text" class="form-control" id="fecha" value="{{ date('Y-m-d') }}" style="display:none">
+                </div>
                   <div class="col-md-6">
                     <div class="form-group">
                         <label for="correo">Correo:</label>

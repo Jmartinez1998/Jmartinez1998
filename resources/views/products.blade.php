@@ -91,7 +91,7 @@
         @isset($products)
         @foreach($products as $product)
         <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
+          <div class="card" style="width: 100%;">
             <img src="/assets/images/productos/{{$product->imagen}}" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">{{$product->nombre}}</h5>
@@ -99,9 +99,9 @@
                 @include('components.btn-cotizacion')
                 </div>
               </div>
-              @endforeach
-              @endisset
           </div>
+          @endforeach
+          @endisset
         </div>
       </div>
         <div class="modal fade in" id="md-interes" tabindex="-1" role="dialog" aria-hidden="false">
