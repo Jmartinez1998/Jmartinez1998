@@ -9,4 +9,8 @@ class ChatController extends Controller
     public function Chat(){
         return view('Chat');
     }
+    public function show()
+    {
+        return view('components.chat.chatModal');
+    }
 }

@@ -33,6 +33,8 @@
     <![endif]-->
      <!-- Script -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     @livewireStyles
+     @livewireScripts
 </head>
 <style>
 .float-right-messenger{
@@ -52,19 +54,12 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="51">
-
-    <!--[if lt IE 8]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Begin Page Loader -->
     <div id="page-loader">
         <div class="preload">
             <img src="assets/img/preloader.gif" alt="Loading"/>
         </div>
         <!-- //.preload -->
     </div>
-    <!-- //End Page Loader -->
 
 
     <!-- Begin Intro Section -->
@@ -367,46 +362,6 @@
                         </div>
                         <!-- //.social-icon-item -->
                     </div>
-                    <!-- //.col-xs-6 col-sm-4 col-md-2 -->
-
-                    <!-- <div class="col-xs-6 col-sm-4 col-md-2">
-                        <div class="social-icon-item text-center not-right-column top-column">
-                            <a href="#twitter">
-                                <span class="social-icon">
-                                    <i class="fa fa-twitter"></i>
-                                </span>
-
-                                <h4>Twitter</h4>
-                            </a>
-                        </div>
-                    </div> -->
-                    <!-- //.col-xs-6 col-sm-4 col-md-2 -->
-
-                    <!-- <div class="col-xs-6 col-sm-4 col-md-2">
-                        <div class="social-icon-item text-center not-right-column top-column">
-                            <a href="#google+">
-                                <span class="social-icon">
-                                    <i class="fa fa-google-plus fa-5x"></i>
-                                </span>
-
-                                <h4>Google +</h4>
-                            </a>
-                        </div>
-                    </div> -->
-                    <!-- //.col-xs-6 col-sm-4 col-md-2 -->
-
-                    <!-- <div class="col-xs-6 col-sm-4 col-md-2">
-                        <div class="social-icon-item text-center not-right-column">
-                            <a href="#youtube">
-                                <span class="social-icon">
-                                    <i class="fa fa-youtube fa-5x"></i>
-                                </span>
-
-                                <h4>Youtube</h4>
-                            </a>
-                        </div>
-                    </div> -->
-                    <!-- //.col-xs-6 col-sm-4 col-md-2 -->
 
                     <div class="col-xs-6 col-sm-3 col-md-2">
                         <div class="social-icon-item text-center not-right-column">
@@ -529,16 +484,6 @@
             </div>
             <!-- //.section-inner -->
         </section>
-        <!-- //End Our Latest Work Section -->
-
-<!-- <hr style="color:#101010;backgroung-color:#101010;height:6rem;"> -->
-    <!-- Begin Map -->
-    <!-- <div id="map">
-        <div id="cd-google-map">
-            <div id="google-container"></div>
-        </div>
-    </div> -->
-    <!-- //End Map -->
 
         <!-- Begin blog Section -->
         <section id="our-blog" class="section" style="background-color:#ddd;">
@@ -736,18 +681,6 @@
                                     <a href="https://www.facebook.com/search/top/?q=green%2086%2C%20ecodise%C3%B1o"><i class="fa fa-facebook"></i></a>
                                 </li>
 
-                                <!-- <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><i class="fa fa-youtube"></i></a>
-                                </li> -->
-
                                 <li>
                                     <a href="#"><i class="fa fa-pinterest"></i></a>
                                 </li>
@@ -867,7 +800,7 @@
 
     <!-- //End Footer -->
 
-    @include('components.chat.chatModal')
+    @include('components.chat.icon-chat')
     <!-- Plugins JS -->
     <script src="libs/jquery.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
