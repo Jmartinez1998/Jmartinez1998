@@ -1,13 +1,14 @@
-<div class="modal fade" id="modalPoll" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalPoll" tabindex="-1" style="background-image:url(/assets/images/system/cotzr.jpg); background-size:cover" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
+      <div class="modal-content" style="background-color:#80717170">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Cotiza aquí tú producto</h5>
+        <a class="navbar-brand" href="#page-top"><img src="/assets/images/system/bg2.png" class="img-fluid img-responsive img-logo-banner" style="width:8rem;" alt=""></a>
+          <h5 class="modal-title" id="exampleModalLabel" style="float:center">Cotiza aquí tú producto</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" >
           <form>
               <div class="row">
                 <div class="col-md-8">
@@ -20,7 +21,7 @@
                     <div class="form-group">
                         <label for="correo">Correo:</label>
                         <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="ingrese el correo" required>
-                        <small id="emailHelp" class="form-text text-muted">Debe ingresar el correo correctamente.</small>
+                        <small id="emailHelp" class="form-text text-muted" style="color:#000">Debe ingresar el correo correctamente.</small>
                       </div>
                   </div>
                   <div class="col-md-6">
