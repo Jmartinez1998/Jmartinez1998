@@ -1,0 +1,1 @@
+<a  data-toggle="modal" data-target="#modalPoll" class="btn btn-primary">Cotización</a>

@@ -11,13 +11,8 @@
     <link rel="shortcut icon" href="/assets/images/logo-banner.png">
     <!-- Bootstrap Core CSS -->
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-|
     <!-- Plugins CSS -->
     <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="libs/animate-css/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="libs/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
-    <link href="libs/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
-    <link href="libs/jquery-magnificPopup/magnific-popup.css" rel="stylesheet" type="text/css">
 
     <!-- Component CSS -->
     <link href="assets/css/component/component.css" rel="stylesheet" type="text/css">
@@ -25,23 +20,11 @@
     <link rel="stylesheet" href="/libs/alertifyjs/css/alertify.min.css">
     <!-- Main CSS -->
     <link href="assets/css/green.css" rel="stylesheet" type="text/css">
-    <!--<link href="assets/css/colors/blue.css" rel="stylesheet" type="text/css">-->
-
-    <!-- Modernizr JS for IE9 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="assets/plugins/modernizr.min.js"></script>
-    <![endif]-->
-     <!-- Script -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-<body >
-
-    <!--[if lt IE 8]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
+<body>
     <!-- Begin Page Loader -->
     <div id="page-loader">
         <div class="preload">
@@ -53,7 +36,7 @@
     <!-- Begin Navbar -->
     <nav id="navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header page-scroll">
+            <div class="navbar-header  page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-rj-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -61,35 +44,35 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="#page-top"><img src="/assets/images/system/bg2.png" class="img-fluid img-responsive img-logo-banner" style="width:14rem;height:4.5rem;margin-top:1rem;margin-bottom:1rem;" alt=""></a>
+                <a class="navbar-brand" href="/#page-top"><img src="/assets/images/system/bg2.png" class="img-fluid img-responsive img-logo-banner" style="width:14rem;height:4.5rem;margin-top:1rem;margin-bottom:1rem;" alt=""></a>
             </div>
             <!-- //.navbar-header -->
 
             <div class="navbar-collapse collapse navbar-rj-collapse">
                 <ul class="nav navbar-nav ">
                     <li class="page-scroll">
-                        <a href="#who-we-are">{{__('ini.navbar.NB1')}}</a>
+                        <a href="/#who-we-are">ACERCA DE NOSOTROS</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="#our-services">{{__('ini.navbar.NB2')}}</a>
+                        <a href="/#our-services">SERVICIOS</a>
                     </li>
 
                     <li class="page-scroll">
-                      <a href="#keep-in-touch">{{__('ini.navbar.NB3')}}</a>
+                      <a href="/#keep-in-touch">REDES SOCIALES</a>
                     </li>
 
                   
                     <li class="page-scroll">
-                        <a href="#our-blog">{{__('ini.navbar.NB5')}}</a>
+                        <a href="/#our-blog">LO NUEVO</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="/blog" onclick="window.location = '/blog'">{{__('ini.navbar.NB6')}}</a>
+                        <a href="/blog" onclick="window.location = '/blog'">BLOG</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a  href data-toggle="modal" data-target="#modalAccess">{{__('ini.navbar.LOG')}}</a>
+                        <a  href data-toggle="modal" data-target="#modalAccess">INGRESAR</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0" style="padding-top: 1rem;"action="{{route('products.search')}}" method="GET" id="search-form">
@@ -103,20 +86,24 @@
         <!-- //.container -->
     </nav>
     <!-- //End Navbar -->
-
-    @isset($products)
-    @foreach($products as $product)
-    {{$product}}
-    <div class="card" style="width: 18rem;">
-    <img src="/assets/images/productos/{{$product->imagen}}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{$product->nombre}}</h5>
-          <p class="card-text">{!!$product->descripcion!!}</p>
-          <a href="#" class="btn btn-primary">Cotización</a>
+    <div class="container">
+      <div class="row" style="margin-top:2rem;margin-bottom:2rem;">
+        @isset($products)
+        @foreach($products as $product)
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="/assets/images/productos/{{$product->imagen}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{$product->nombre}}</h5>
+                  <p class="card-text">{!!$product->descripcion!!}</p>
+                @include('components.btn-cotizacion')
+                </div>
+              </div>
+              @endforeach
+              @endisset
+          </div>
         </div>
       </div>
-      @endforeach
-      @endisset
         <div class="modal fade in" id="md-interes" tabindex="-1" role="dialog" aria-hidden="false">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -167,7 +154,6 @@
             </div>
           </div>
         </div>
-        @include('components.chat.icon-chat')
     <!-- Begin Footer -->
     <footer class="footer">
         <!-- Begin Footer Section -->
@@ -202,20 +188,6 @@
                                 <li>
                                     <a href="https://www.facebook.com/search/top/?q=green%2086%2C%20ecodise%C3%B1o"><i class="fa fa-facebook"></i></a>
                                 </li>
-
-                                <!-- <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><i class="fa fa-youtube"></i></a>
-                                </li> -->
-
-                                <li>
                                     <a href="#"><i class="fa fa-pinterest"></i></a>
                                 </li>
 
@@ -226,10 +198,6 @@
                         </div>
                         <!-- //.footer-text -->
                     </div>
-                    <!-- //.footer-column -->
-
-                    <!-- //.footer-column -->
-
                     <div class="col-sm-4 col-md-4 footer-column">
                         <div class="footer-text">
                             <h4>Dejanos algún mensaje</h4>
@@ -331,25 +299,11 @@
         </div>
       </div>
     </div>
-
+    @include('components.cotizacion.modal-cotizacion')
     <!-- //End Footer -->
-
-    @include('components.chat.chatModal')
     <!-- Plugins JS -->
     <script src="libs/jquery.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-    <script src="libs/detectmobilebrowser/detectmobilebrowser.js"></script>
-    <script src="libs/smartresize/smartresize.js"></script>
-    <script src="libs/jquery-easing/jquery.easing.min.js"></script>
-    <script src="libs/jquery-sticky/jquery.sticky.js"></script>
-    <script src="libs/jquery-inview/jquery.inview.min.js"></script>
-    <script src="libs/jquery-countTo/jquery.countTo.js"></script>
-    <script src="libs/jquery-easypiechart/jquery.easypiechart.min.js"></script>
-    <script src="libs/jquery-countdown/jquery.plugin.min.js"></script>
-    <script src="libs/jquery-countdown/jquery.countdown.min.js"></script>
-    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
-    <script src="libs/isotope/isotope.pkgd.min.js"></script>
-    <script src="libs/jquery-magnificPopup/jquery.magnific-popup.min.js"></script>
     <script src="libs/jquery-validation/jquery.validate.min.js"></script>
 
     <!-- Main JS -->
@@ -359,34 +313,9 @@
     <script src="assets/js/animation.js"></script>
 
     <!-- Component JS -->
-    <script src="assets/js/component/bar-chart.js"></script>
-    <script src="assets/js/component/countdown.js"></script>
-    <script src="assets/js/component/counters.js"></script>
-    <script src="assets/js/component/pie-chart.js"></script>
-    <script src="assets/js/component/portfolio.js"></script>
-    <script src="assets/js/component/animation.js"></script>
-
-    <!-- Map JS -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsRnDaJy4oSSaOLBiScwDJSyoDM7GniE8"></script>
-    <script src="assets/js/component/map.js"></script>
     <script src="libs/alertifyjs/alertify.js" charset="utf-8"></script>
     <script src="/scripts/login.js" type="text/javascript"></script>
     <script src="/scripts/buzon.js" charset="utf-8"></script>
-    <script type="text/javascript">
-      $(function(){
-        setTimeout(function(){
-          $(".list-unstyled li.active").next().children("a").trigger("click");
-          //  var filtros = $(".list-unstyled li.active>a").data("filter");
-          //  $(".portfolio-item").hide();
-          //  $(filtros).show();
-          //console.clear();
-        },700)
-        $(".btn-interesa").click(function(){
-          $("#id").val($(this).data("id"));
-          //setTimeout(function(){$(".mfp-close").trigger("click");},1000)
-        })
-      });
-    </script>
 </body>
 </html>
 
