@@ -41,7 +41,8 @@
                 <td>{{$seccion->updated_at}}</td>
                 <td>
                   <center>
-                    <button type="button" name="section-edit" class="btn btn-info btn-inline-block" title="Editar" data-val="{{$seccion->id}}">
+                    
+                    <button type="button" name="section-editar" class="btn btn-info btn-inline-block" title="Rolar" data-val="{}">
                       <span class="fa fa-pencil"></span>
                     </button>
                     <button type="button" name="section-del" class="btn btn-danger btn-inline-block" title="Eliminar" data-val="{{$seccion->id}}">
