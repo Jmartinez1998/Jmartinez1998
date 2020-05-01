@@ -20,6 +20,7 @@ class CreateCotizacionesTable extends Migration
             $table->double('cantidad');
             $table->text('mensaje');
             $table->date('fecha');
+            $table->string('estatus');
             $table->string('empresa')->nullable();
             $table->integer('producto_id');
             $table->timestamps();

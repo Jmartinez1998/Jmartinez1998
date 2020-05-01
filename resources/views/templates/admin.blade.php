@@ -49,10 +49,16 @@
             <li class="li-menu" id="li-catalogo">
               <a href="/admin/categorias#">
                 <i class="fa fa-link"></i>
-                <span>Cátalogos y productos</span>
+                <span>Categorías y productos</span>
               </a>
             </li>
-            <li class="li-menu" id="li-catalogo">
+            <li class="li-menu" id="li-cotizacion">
+              <a href="/admin/cotizaciones">
+                <i class="fa fa-link"></i>
+                <span>Cotizaciones</span>
+              </a>
+            </li>
+            <li class="li-menu" id="li-chats">
               <a href="/Chat">
                 <i class="fa fa-link"></i>
                 <span>Chats</span>

@@ -46,6 +46,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/producto-delete', 'ProductoController@delete');
     Route::get('/logout', 'LoginController@logout');
 
+    //crud cotizaciones
+    Route::get('/admin/cotizaciones', 'CotizacionController@view');
+
 });
 
 //Save

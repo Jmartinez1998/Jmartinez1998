@@ -16,10 +16,11 @@ class CotizacionProducer
         $data 				     = $request->all();
         $cotizacion              = new Cotizacione();
         $cotizacion ->nombre     = $data['nombre'];
-        $cotizacion ->email    = $data['correo'];
+        $cotizacion ->email      = $data['correo'];
         $cotizacion ->cantidad   = $data['cantidad'];
         $cotizacion ->mensaje    = $data['mensaje'];
         $cotizacion ->fecha      = $data['fecha'];
+        $cotizacion ->estatus    = 1;
         $cotizacion ->empresa    = $data['empresa'];
         $cotizacion ->producto_id      = $data['id'];
         $cotizacion ->save();
