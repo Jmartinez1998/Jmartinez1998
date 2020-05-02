@@ -42,12 +42,17 @@
                 <td>
                   <center>
                     
-                    <button type="button" name="section-editar" class="btn btn-info btn-inline-block" title="Rolar" data-val="{}">
-                      <span class="fa fa-pencil"></span>
-                    </button>
                     <button type="button" name="section-del" class="btn btn-danger btn-inline-block" title="Eliminar" data-val="{{$seccion->id}}">
                       <span class="fa fa-trash"></span>
                     </button>
+
+
+                    <button type="button" name="section-edit" class="btn btn-info btn-inline-block" title="Rolar" data-val="{{$seccion->id}}">
+                      <span class="fa fa-pencil"></span>
+                    </button>
+
+
+                    
                     <a href="/admin/post/{{$seccion->id}}" name="section-in" class="btn btn-primary btn-inline-block" title="Ingresar">
                       <span class="fa fa-arrow-right"></span>
                     </a>
