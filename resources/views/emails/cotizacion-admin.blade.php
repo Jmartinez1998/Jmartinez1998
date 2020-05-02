@@ -13,7 +13,7 @@
   <body>
   <div class="container">
       <img src="" style="width:30%;margin-left: 35%;margin-right: 35%;">
-      <h1 style="text-align:center">¡Gracias por agendar una cita con nosotros!</h1>
+      <h1 style="text-align:center">¡Ha llegado una cotización nueva!</h1>
       <h2>Hola, </h2>
       <h4>Lo esperamos en la fecha en nuestras oficinas.</h4>
     </div>
