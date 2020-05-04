@@ -68,7 +68,7 @@ $(function () {
     values.append('contenido', tinymce.activeEditor.getContent());
     return values;
   }
-  function saveSection(data, uri){
+  function saveSection(data, uri) {
     $.ajax({
       url: uri,
       type: 'POST',
@@ -81,11 +81,7 @@ $(function () {
       try {
         switch (res.status) {
           case "200":
-            swal(
-              'Bien hecho!',
-              'La sección de ha guardado.',
-              'success'
-            );
+            alert*('Dato guardado satisfactoriamente!')
             window.location.reload();
             break;
           case "401":
@@ -96,7 +92,9 @@ $(function () {
                 'info'
               );
             });
-            $btnSave.prop("disabled", false);
+            alert('ok');
+            window.reload();
+            //$btnSave.prop("disabled", false);
             $btnDel.prop("disabled", false);
             $btnCancel.prop("disabled", false);
             break;
@@ -143,10 +141,14 @@ $(function () {
         console.log(res);
         switch (res.status) {
           case '200':
+            alert(  'Datos guardados correctamente!');
+              location.reload();
+            break;
+            case '401':
             swal(
-              'Eliminado!',
-              'La sección ha sido eliminada.',
-              'success'
+              'Upps!',
+              'La imagen es requerida',
+              'info'
             );
             window.location.reload();
             break;
@@ -257,7 +259,6 @@ $(function () {
     }
   });
   $btnSave.on('click', function(e) {
-    $btnSave.prop("disabled", true);
     $btnDel.prop("disabled", true);
     $btnCancel.prop("disabled", true);
     let data = getValues();
@@ -270,6 +271,7 @@ $(function () {
       data.append('id', section_id);
     }
     saveSection(data, uri);
+    window.reload();
   });
   $btnPrev.on('click', function() {
     $("#preview").html("");
