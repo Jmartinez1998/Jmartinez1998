@@ -17,7 +17,7 @@ class CotizacionController extends Controller
         return view('products',compact('products'));
     }
     public function view(Request $req){
-        $Categorias = Cotizacione::where('estatus', '=', 1)->get();
-        return view('admin.cotizaciones', ['categorias' => $Categorias]);
+        $Cotizaciones = Cotizacione::where('estatus', '=', 1)->get();
+        return view('admin.cotizaciones', ['cotizaciones' => $Cotizaciones]);
       }
 }

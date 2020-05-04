@@ -24,7 +24,7 @@
           <br>
         </div>
         <div class="box-body">
-          <table id="categorias" class="table table-bordered table-striped table-responsive">
+          <table id="cotizaciones" class="table table-bordered table-striped table-responsive">
             <thead>
               <tr>
                 <th>Nombre del cotizante</th>
@@ -35,21 +35,21 @@
               </tr>
             </thead>
             <tbody>
-              @foreach ($categorias as $categoria)
+              @foreach ($cotizaciones as $cotizacion)
               <tr>
-                <td>{{$categoria->nombre}}</td>
-                <td>{{$categoria->email}}</td>
-                <td>{{$categoria->producto_id}}</td>
-                <td>{{$categoria->created_at}}</td>
+                <td>{{$cotizacion->nombre}}</td>
+                <td>{{$cotizacion->email}}</td>
+                <td>{{$cotizacion->producto_id}}</td>
+                <td>{{$cotizacion->created_at}}</td>
                 <td>
                   <center>
-                    <button type="button" name="categoria-edit" class="btn btn-info btn-inline-block" title="Editar" data-val="{{$categoria->id}}">
+                    <button type="button" name="cotizacion-edit" class="btn btn-info btn-inline-block" title="Editar" data-val="{{$cotizacion->id}}">
                       <span class="fa fa-pencil"></span>
                     </button>
-                    <button type="button" name="categoria-del" class="btn btn-danger btn-inline-block" title="Eliminar" data-val="{{$categoria->id}}">
+                    <button type="button" name="cotizacion-del" class="btn btn-danger btn-inline-block" title="Eliminar" data-val="{{$cotizacion->id}}">
                       <span class="fa fa-trash"></span>
                     </button>
-                    <a href="/admin/producto/{{$categoria->id}}" name="categoria-in" class="btn btn-primary btn-inline-block" title="Ingresar">
+                    <a href="/admin/producto/{{$cotizacion->id}}" name="cotizacion-in" class="btn btn-primary btn-inline-block" title="Ingresar">
                       <span class="fa fa-arrow-right"></span>
                     </a>
                   </center>
@@ -70,14 +70,14 @@
 
         <div class="box-header">
           <h3 class="box-title">
-            Agregar nueva categoría
+            Contestación de la cotización
           </h3>
         </div>
 
         <div class="box-body">
           <form name="form-section">
             <div class="form-group">
-              <label>Título de la categoría</label>
+              <label>Titulo del mensaje</label>
               <input type="text" name="titulo" class="form-control" autofocus>
             </div>
           </form>
@@ -92,7 +92,7 @@
               <span class="fa fa-trash"></span>&nbsp;
               Cancelar
             </button>
-            <button type="button" name="saveCategoria" class="btn btn-primary">
+            <button type="button" name="saveCotizacion" class="btn btn-primary">
               <span class="fa fa-check"></span>&nbsp;
               Guardar Categoría
             </button>
@@ -129,5 +129,5 @@
   <script src="/libs/datatables/jquery.dataTables.min.js"></script>
   <script src="/libs/datatables/dataTables.bootstrap.min.js"></script>
   <script src="/libs/tinymce/js/tinymce/tinymce.min.js" charset="utf-8"></script>
-  <script src="/scripts/catalogo/categoria.js" charset="utf-8"></script>
+  <script src="/scripts/admin/cotizacion.js" charset="utf-8"></script>
 @stop
