@@ -117,55 +117,38 @@ $(function () {
   }
 
   function deletepost(id) {
-    swal({
-      title: '¿Estás seguro?',
-      text: "Al eliminar esta publicación no podrás revertir los cambios",
-      type: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Sí, eliminar!',
-      cancelButtonText: 'cancelar'
-    }).then(function () {
-      $.ajax({
-          url: '/post-delete',
-          type: 'POST',
-          data: {
-            'id': id
-          }
+    //alert('Eliminar!');
+    $.ajax({
+      url: '/post-delete',
+      type: 'POST',
+      data: {
+        'id': id
+      }
+    })
+    .done(function (res) {
+      if (res.status == 200) {
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Eliminado correctamente',
+          showConfirmButton: false,
+          timer: 1500
         })
-        .done(function (res) {
-          console.log(res);
-          switch (res.status) {
-            case '200':
-              swal(
-                'Eliminado!',
-                'La publicación ha sido eliminada.',
-                'success'
-              );
-              window.location.reload();
-              break;
-            case '404':
-              swal(
-                'Upps!',
-                'No se ha realizado la acción, recarga e intentalo nuevamente.',
-                'info'
-              );
-              break;
-          }
+        window.location.reload();
+      } else {
+        console.log('Error!');
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Algo salio mal al Eliminar :( !',
+          footer: '<a href>Intente mas tarde</a>'
         })
-        .fail(function (err) {
-          swal(
-            'Upps!',
-            'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos',
-            'error'
-          );
-          console.log(err);
-        });
-    });
-    $btnDel.prop('disabled', false);
-    $btnInPost.prop("disabled", false);
-    $btnEdit.prop('disabled', false);
+        window.location.reload();
+      }
+    })
+    //$btnDel.prop('disabled', false);
+    //$btnInPost.prop("disabled", false);
+    //$btnEdit.prop('disabled', false);
   }
 
   function getEditValues(id) {
@@ -284,10 +267,8 @@ $(function () {
   });
 
   $btnDel.on('click', function (e) {
-    $btnDel.prop('disabled', true);
-    $btnInPost.prop("disabled", true);
-    $btnEdit.prop('disabled', true);
-    $("button[name=conf-in]").prop("disabled", true);
+    
+    //$("button[name=conf-in]").prop("disabled", true);
     deletepost($(this).data('val'));
   });
 
