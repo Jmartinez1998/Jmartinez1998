@@ -121,7 +121,8 @@ $(function () {
       console.log(err);
     });
   }
-  function deleteSection(id){
+  // Esta Funcion fue remplazada
+  /*function deleteSection(id) {
     swal({
       title: '¿Estás seguro?',
       text: "Al eliminar esta sección también se eliminarán las publbicaciones permanecientes a esta sección",
@@ -134,7 +135,7 @@ $(function () {
     }).then(function () {
       $.ajax({
         url: '/section-delete',
-        type: 'POST',
+        type: 'POST',_
         data: {'id': id}
       })
       .done(function(res){
@@ -173,7 +174,7 @@ $(function () {
     $btnDel.prop('disabled', false);
     $btnInPost.prop("disabled", false);
     $btnEdit.prop('disabled', false);
-  }
+  }*/
   function getEditValues(id){
     $.ajax({
       url: '/section-info',
@@ -279,12 +280,48 @@ $(function () {
     $("#preview").append(`<div style="background-image: url(${$btnPrev.data('img-prev')})" class="section-banner"></div>`);
     $("#preview").append(tinymce.activeEditor.getContent());
   });
+  // Evento click en delete pasa como parametro id de seccion a eliminar
   $btnDel.on('click', function(e) {
-    $btnDel.prop('disabled', true);
+    //$btnDel.prop('disabled', true);
     $btnInPost.prop("disabled", true);
     $btnEdit.prop('disabled', true);
-    $("button[name=conf-in]").prop("disabled", true);
-    deleteSection($(this).data('val'));
+    //$("button[name=conf-in]").prop("disabled", true);
+
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: 'btn btn-success',
+        cancelButton: 'btn btn-danger'
+      },
+      buttonsStyling: false
+    })
+
+    swalWithBootstrapButtons.fire({
+      title: 'Esta seguro de eliminar esta categoria del blog?',
+      text: "No podras revertir los cambios!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Si, Eliminar!',
+      cancelButtonText: 'No, cancelar!',
+      reverseButtons: true
+    }).then((result) => {
+      if (result.value) {
+        swalWithBootstrapButtons.fire(
+          'Eliminar!',
+          'Tu categoria fue eliminada',
+          'success'
+        )
+        deleteSection($(this).data('val'));
+      } else if (
+        /* Read more about handling dismissals below */
+        result.dismiss === Swal.DismissReason.cancel
+      ) {
+        swalWithBootstrapButtons.fire(
+          'Cancelar',
+          'Tu categoria no fue eliminada!',
+          'error'
+        )
+      }
+    })
   });
   $btnEdit.on('click', function (e) {
     $btnEdit.prop('disabled', true);
@@ -303,3 +340,21 @@ $(function () {
   });
 // =========================================================================
 });
+
+function deleteSection(id) {
+  $.ajax({
+    url: '/section-delete',
+    type: 'POST',
+    data: {'id': id}
+  })
+  .done(function(res){
+    //console.log('No se puede eliminar !');
+      if(res.status == 200) {
+        location.reload();
+      }
+      else {
+        console.log('Error al guardar!');
+        location.reload();
+      }
+  })
+}

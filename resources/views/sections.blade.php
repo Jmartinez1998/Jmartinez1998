@@ -153,5 +153,6 @@
   <script src="/libs/datatables/jquery.dataTables.min.js"></script>
   <script src="/libs/datatables/dataTables.bootstrap.min.js"></script>
   <script src="/libs/tinymce/js/tinymce/tinymce.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <script src="/scripts/sections/sections.js" charset="utf-8"></script>
 @stop
