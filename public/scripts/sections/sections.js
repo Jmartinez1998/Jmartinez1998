@@ -135,7 +135,7 @@ $(function () {
     }).then(function () {
       $.ajax({
         url: '/section-delete',
-        type: 'POST',
+        type: 'POST',_
         data: {'id': id}
       })
       .done(function(res){
@@ -286,7 +286,42 @@ $(function () {
     $btnInPost.prop("disabled", true);
     $btnEdit.prop('disabled', true);
     //$("button[name=conf-in]").prop("disabled", true);
-    deleteSection($(this).data('val'));
+
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: 'btn btn-success',
+        cancelButton: 'btn btn-danger'
+      },
+      buttonsStyling: false
+    })
+
+    swalWithBootstrapButtons.fire({
+      title: 'Esta seguro de eliminar esta categoria del blog?',
+      text: "No podras revertir los cambios!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Si, Eliminar!',
+      cancelButtonText: 'No, cancelar!',
+      reverseButtons: true
+    }).then((result) => {
+      if (result.value) {
+        swalWithBootstrapButtons.fire(
+          'Eliminar!',
+          'Tu categoria fue eliminada',
+          'success'
+        )
+        deleteSection($(this).data('val'));
+      } else if (
+        /* Read more about handling dismissals below */
+        result.dismiss === Swal.DismissReason.cancel
+      ) {
+        swalWithBootstrapButtons.fire(
+          'Cancelar',
+          'Tu categoria no fue eliminada!',
+          'error'
+        )
+      }
+    })
   });
   $btnEdit.on('click', function (e) {
     $btnEdit.prop('disabled', true);
@@ -315,11 +350,10 @@ function deleteSection(id) {
   .done(function(res){
     //console.log('No se puede eliminar !');
       if(res.status == 200) {
-        alert('Eliminado correctamenrte!');
         location.reload();
       }
       else {
-        alert('Error al guardar!');
+        console.log('Error al guardar!');
         location.reload();
       }
   })
