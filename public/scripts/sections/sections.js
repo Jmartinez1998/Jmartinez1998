@@ -121,7 +121,8 @@ $(function () {
       console.log(err);
     });
   }
-  function deleteSection(id){
+  // Esta Funcion fue remplazada
+  /*function deleteSection(id) {
     swal({
       title: '¿Estás seguro?',
       text: "Al eliminar esta sección también se eliminarán las publbicaciones permanecientes a esta sección",
@@ -173,7 +174,7 @@ $(function () {
     $btnDel.prop('disabled', false);
     $btnInPost.prop("disabled", false);
     $btnEdit.prop('disabled', false);
-  }
+  }*/
   function getEditValues(id){
     $.ajax({
       url: '/section-info',
@@ -279,11 +280,12 @@ $(function () {
     $("#preview").append(`<div style="background-image: url(${$btnPrev.data('img-prev')})" class="section-banner"></div>`);
     $("#preview").append(tinymce.activeEditor.getContent());
   });
+  // Evento click en delete pasa como parametro id de seccion a eliminar
   $btnDel.on('click', function(e) {
-    $btnDel.prop('disabled', true);
+    //$btnDel.prop('disabled', true);
     $btnInPost.prop("disabled", true);
     $btnEdit.prop('disabled', true);
-    $("button[name=conf-in]").prop("disabled", true);
+    //$("button[name=conf-in]").prop("disabled", true);
     deleteSection($(this).data('val'));
   });
   $btnEdit.on('click', function (e) {
@@ -303,3 +305,22 @@ $(function () {
   });
 // =========================================================================
 });
+
+function deleteSection(id) {
+  $.ajax({
+    url: '/section-delete',
+    type: 'POST',
+    data: {'id': id}
+  })
+  .done(function(res){
+    //console.log('No se puede eliminar !');
+      if(res.status == 200) {
+        alert('Eliminado correctamenrte!');
+        location.reload();
+      }
+      else {
+        alert('Error al guardar!');
+        location.reload();
+      }
+  })
+}
