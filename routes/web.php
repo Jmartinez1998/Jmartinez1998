@@ -48,6 +48,8 @@ Route::group(['middleware' => 'auth'], function () {
 
     //crud cotizaciones
     Route::get('/admin/cotizaciones', 'CotizacionController@view');
+    Route::get('/admin/cotizacion/{id}','CotizacionController@viewCotizacion');
+    Route::get('/cotizacion-delete/{id}','CotizacionController@delete');
 
 });
 
@@ -73,5 +75,7 @@ Route::get('buscar', 'ProductoController@search')->name('products.search');
 
 //Cotizacion
 Route::post('send', 'CotizacionController@send')->name('correo.cotizacion');
+
+//Ruta del chat
 Route::get("/Chat","ChatController@Chat"); 
 Route::get('chat', 'ChatController@show')->name('landing.chat');

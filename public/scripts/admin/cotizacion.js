@@ -18,7 +18,24 @@ $(function () {
       var cotizacion_id;
     // =========================================================================
     // INICIALIZACIÓN
-      $cotizaciones.DataTable
+      //$cotizaciones.DataTable
+      // =========================================================================
+// INICIALIZACIÓN
+  $cotizaciones.DataTable();
+  tinymce.init({
+    selector: 'textarea',
+    height: 400,
+    menubar: false,
+    plugins: [
+      'advlist autolink lists link image charmap print preview anchor textcolor',
+      'searchreplace visualblocks code fullscreen',
+      'insertdatetime media table contextmenu paste code help'
+    ],
+    toolbar: 'insert | undo redo |  styleselect | bold italic backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat',
+    content_css: [
+      '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+      '//www.tinymce.com/css/codepen.min.css']
+  });
     // =========================================================================
     // FUNCIONES
       function fileExt(archivo, tipos){
@@ -107,10 +124,10 @@ $(function () {
           console.log(err);
         });
       }
-      function deleteCotizacion(id){
+      function deleteCotizacion(id){ 
         swal({
           title: '¿Estás seguro?',
-          text: "Al eliminar esta categoría también se eliminaran todos los productos permanecientes a esta cotizacion.",
+          text: "Al eliminar esta cotizacion también se eliminaran todos los productos permanecientes a esta cotizacion.",
           type: 'warning',
           showCancelButton: true,
           confirmButtonColor: '#3085d6',
@@ -251,7 +268,7 @@ $(function () {
           uri = "/cotizacion-update";
           data.append('id', cotizacion_id);
         }
-        saveCategoria(data, uri);
+        saveCotizacion(data, uri);
       });
       $btnPrev.on('click', function() {
         $("#preview").html("");
@@ -263,16 +280,16 @@ $(function () {
         $btnInPost.prop("disabled", true);
         $btnEdit.prop('disabled', true);
         $("button[name=conf-in]").prop("disabled", true);
-        deleteCategoria($(this).data('val'));
+        deleteCotizacion($(this).data('val'));
       });
       $btnEdit.on('click', function (e) {
         $btnEdit.prop('disabled', true);
         $btnDel.prop('disabled', true);
         $btnInPost.prop("disabled", true);
         $("button[name=conf-in]").prop("disabled", true);
-        categoria_id = $(this).data('val');
+        cotizacion_id = $(this).data('val');
         saveType = 'update';
-        getEditValues(categoria_id);
+        getEditValues(cotizacion_id);
       });
       $btnCancel.on('click', (e) => {
         $btnEdit.prop('disabled', false);
@@ -281,7 +298,7 @@ $(function () {
         $("button[name=conf-in]").prop("disabled", false);
       });
       $(".li-menu").removeClass("active");
-      $("#li-catalogo").addClass("active");
+      $("#li-cotizacion").addClass("active");
     
     // =========================================================================
     });

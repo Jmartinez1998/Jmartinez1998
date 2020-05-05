@@ -16,10 +16,6 @@
         <div class="box-header">
           <h3 class="box-title">Cotizaciones</h3>
           <div class="pull-right">
-            <button type="button" name="conf-in" class="btn btn-success conf-display">
-              <span class="fa fa-plus"></span>&nbsp;
-              Nuevo
-            </button>
           </div>
           <br>
         </div>
@@ -31,25 +27,24 @@
                 <th>Correo</th>
                 <th>Producto a cotizar</th>
                 <th>Fecha de Creación</th>
+                <th>Contestada</th>
                 <th>Acciones</th>
               </tr>
             </thead>
             <tbody>
-              @foreach ($cotizaciones as $cotizacion)
+              @foreach ($cotizaciones as $cotizacion) 
               <tr>
                 <td>{{$cotizacion->nombre}}</td>
                 <td>{{$cotizacion->email}}</td>
-                <td>{{$cotizacion->producto_id}}</td>
+                <td>{{$cotizacion->producto->nombre}}</td>
                 <td>{{$cotizacion->created_at}}</td>
+                <td>NO</td>
                 <td>
                   <center>
-                    <button type="button" name="cotizacion-edit" class="btn btn-info btn-inline-block" title="Editar" data-val="{{$cotizacion->id}}">
-                      <span class="fa fa-pencil"></span>
-                    </button>
-                    <button type="button" name="cotizacion-del" class="btn btn-danger btn-inline-block" title="Eliminar" data-val="{{$cotizacion->id}}">
+                    <a type="button" href="/cotizacion-delete/{{$cotizacion->id}}" name="cotizacion-del" class="btn btn-danger btn-inline-block" title="Eliminar">
                       <span class="fa fa-trash"></span>
-                    </button>
-                    <a href="/admin/producto/{{$cotizacion->id}}" name="cotizacion-in" class="btn btn-primary btn-inline-block" title="Ingresar">
+                    </a>
+                    <a href="/admin/cotizacion/{{$cotizacion->id}}" name="cotizacion-in" class="btn btn-primary btn-inline-block" title="Ingresar">
                       <span class="fa fa-arrow-right"></span>
                     </a>
                   </center>
@@ -94,7 +89,7 @@
             </button>
             <button type="button" name="saveCotizacion" class="btn btn-primary">
               <span class="fa fa-check"></span>&nbsp;
-              Guardar Categoría
+              Guardar Cotizacion
             </button>
           </div>
         </div>

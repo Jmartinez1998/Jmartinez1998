@@ -11,8 +11,8 @@ class Cotizacione extends Model
      * Belongs to category
      * @return BelongsTo
      */
-    public function product()
+    public function producto()
     {
-        return $this->belongsTo(Producto::class, 'product_id');
+        return $this->belongsTo(Producto::class);
     }
 }
