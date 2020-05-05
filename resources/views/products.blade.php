@@ -75,11 +75,11 @@
                         <a  href data-toggle="modal" data-target="#modalAccess">INGRESAR</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0" style="padding-top: 1rem;"action="{{route('products.search')}}" method="GET" id="search-form">
-                    @csrf
-                    <input class="form-control mr-sm-2" type="search" placeholder="Descubre" aria-label="Search">
-                    <a type="button" class="btn btn-outline-success my-2 my-sm-0 fa fa-search" type="submit"  onclick="document.getElementById('search-form').submit();"></a>
-                  </form>
+                <form class="form-inline my-2 my-lg-0" style="padding-top: 1rem;" action="{{route('products.search')}}" method="POST">
+                  @csrf
+                  <input class="form-control mr-sm-2" name='busqueda' type="search" placeholder="Descubre" aria-label="Search">
+                  <a type="button" class="btn btn-outline-success my-2 my-sm-0 fa fa-search" type="submit" ></a>
+                </form>
             </div>
             <!-- //.navbar-collapse -->
         </div>
