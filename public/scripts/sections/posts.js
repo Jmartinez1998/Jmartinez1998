@@ -117,7 +117,7 @@ $(function () {
   }
 
   function deletepost(id) {
-    //alert('Eliminar!');
+    //console.log('Eliminar!');
     $.ajax({
       url: '/post-delete',
       type: 'POST',
