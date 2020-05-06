@@ -104,7 +104,7 @@ class PostController extends Controller
     }
   }
 
-  public function delete(Request $req){
+  public function delete(Request $req) {
     $Post = Post::where('id', '=', $req->id)->update(array(
       'estatus' => 0
     ));

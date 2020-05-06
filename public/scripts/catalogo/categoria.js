@@ -107,51 +107,35 @@ $(function () {
       console.log(err);
     });
   }
-  function deleteCategoria(id){
-    swal({
-      title: '¿Estás seguro?',
-      text: "Al eliminar esta categoría también se eliminaran todos los productos permanecientes a esta categoría.",
-      type: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Sí, eliminar!',
-      cancelButtonText: 'cancelar'
-    }).then(function () {
-      $.ajax({
-        url: '/categoria-delete',
-        type: 'POST',
-        data: {'id': id}
-      })
-      .done(function(res){
-        console.log(res);
-        switch (res.status) {
-          case '200':
-            swal(
-              'Eliminado!',
-              'La categoría ha sido eliminada.',
-              'success'
-            );
-            window.location.reload();
-            break;
-          case '404':
-            swal(
-              'Upps!',
-              'No se ha realizado la acción, recarga e intentalo nuevamente.',
-              'info'
-            );
-            break;
-        }
-      })
-      .fail(function(err){
-        swal(
-          'Upps!',
-          'Error no administrado, vulve a intentarlo\nSi el problema continua, contactanos',
-          'error'
-        );
-        console.log(err);
-      });
-    });
+  function deleteCategoria(id) {
+    $.ajax({
+      url: '/categoria-delete',
+      type: 'POST',
+      data: {
+        'id': id
+      }
+    })
+    .done(function (res) {
+      if (res.status == 200) {
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: ' Categoria Eliminada correctamente',
+          showConfirmButton: false,
+          timer: 1500
+        })
+        window.location.reload();
+      } else {
+        console.log('Error!');
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Algo salio mal al Eliminar :( !',
+          footer: '<a href>Intente mas tarde</a>'
+        })
+        window.location.reload();
+      }
+    })
     $btnDel.prop('disabled', false);
     $btnInPost.prop("disabled", false);
     $btnEdit.prop('disabled', false);
