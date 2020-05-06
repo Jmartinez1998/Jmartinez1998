@@ -36,23 +36,31 @@
           <br>
         </div>
         <div class="box-body">
+          <div class="container">
+            <img src="">
+            <h2 style="text-align:center">¡Ha llegado una cotización nueva!</h2>
+            <h2>Hola, </h2>
+            <h4>El cliente {{$cotizacion['nombre']}} ha enviado una cotización para el producto {{$cotizacion->producto->nombre}}.</h4>
+          </div>
+          <hr>
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+          <div class="jumbotron" style="border-radius:10px">
             <div class="container">
-                <img src="" style="width:30%;margin-left: 35%;margin-right: 35%;">
-                <h1 style="text-align:center">¡Ha llegado una cotización nueva!</h1>
-                <h2>Hola, </h2>
-                <h4>Lo esperamos en la fecha en nuestras oficinas.</h4>
-              </div>
-              <hr>
-              <div class="col-md-2"></div>
-              <div class="col-md-8">
-              <div class="jumbotron" style="border-radius:10px">
-                <div class="container">
-                  <h3 style="color:#2a76b0">Usted nos ha proporcionado la siguiente información:</h3>
-                  <br>
-                </div> 
-              </div>
-              </div>
-              <div class="col-md-2"></div>
+              <h3 style="color:#2a76b0">Datos que proporciono el cliente:</h3>
+              <br>
+              <strong>Nombre: </strong>
+              <h5 style="color:#2a76b0">{{$cotizacion['nombre']}}</h5>
+              <strong>Email:</strong>
+              <h5 style="color:#2a76b0">{{$cotizacion['email']}}</h5>
+              <strong>Empresa: </strong>
+              <h5 style="color:#2a76b0">{{$cotizacion['empresa']}}</h5>
+              <strong>Mensaje: </strong>
+              <h5 style="color:#2a76b0">{{$cotizacion['mensaje']}}</h5>
+            </div> 
+          </div>
+          </div>
+          <div class="col-md-2"></div>
         </div>
       </div>
     </div>
@@ -66,18 +74,18 @@
 
         <div class="box-header">
           <h3 class="box-title" id="title-post">
-            Agregar nuevo producto para ""
+            Respondiendo cotización
           </h3>
         </div>
 
         <div class="box-body">
           <form name="form-producto">
             <div class="form-group">
-              <label>Nombre del producto</label>
+              <label>Asunto</label>
               <input type="text" name="titulo" class="form-control" autofocus>
             </div>
             <div class="form-group">
-              <label>Imagen del producto</label>
+              <label>Archivo</label>
               <div class="input-group">
                 <input type="text" name="file-image" class="form-control" readonly>
                 <span class="input-group-btn">
@@ -89,7 +97,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label>Descripción</label>
+              <label>Mensaje</label>
               <textarea name="descripcion" class="form-control" rows="8" maxlength="150"></textarea>
             </div>
           </form>

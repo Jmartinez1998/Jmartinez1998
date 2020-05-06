@@ -13,9 +13,9 @@
   <body>
   <div class="container">
       <img src="" style="width:30%;margin-left: 35%;margin-right: 35%;">
-      <h1 style="text-align:center">¡Gracias por enviarnos su cotización con nosotros!</h1>
+      <h1 style="text-align:center">¡Gracias por enviar su cotización con nosotros!</h1>
       <h2>Hola, </h2>
-      <h4>Lo esperamos en la fecha en nuestras oficinas.</h4>
+      <h4>En seguida revisaremos su cotización y resivira la contestación previa.</h4>
     </div>
     <hr>
     <div class="col-md-2"></div>
@@ -24,6 +24,16 @@
       <div class="container">
         <h3 style="color:#2a76b0">Usted nos ha proporcionado la siguiente información:</h3>
         <br>
+        <strong>Nombre: </strong>
+        <h5 style="color:#2a76b0">{{$request['nombre']}}</h5>
+        <strong>Email:</strong>
+        <h5 style="color:#2a76b0">{{$request['email']}}</h5>
+        <strong>Empresa: </strong>
+        <h5 style="color:#2a76b0">{{$request['empresa']}}</h5>
+        <strong>Producto: </strong>
+        <h5 style="color:#2a76b0">{{$request->producto->nombre}}</h5>
+        <strong>Mensaje: </strong>
+        <h5 style="color:#2a76b0">{{$request['mensaje']}}</h5>
       </div> 
     </div>
     </div>

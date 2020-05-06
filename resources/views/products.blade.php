@@ -32,63 +32,11 @@
         </div>
         <!-- //.preload -->
     </div>
-    <!-- //End Page Loader -->
-    <!-- Begin Navbar -->
-    <nav id="navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header  page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-rj-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand" href="/#page-top"><img src="/assets/images/system/bg2.png" class="img-fluid img-responsive img-logo-banner" style="width:14rem;height:4.5rem;margin-top:1rem;margin-bottom:1rem;" alt=""></a>
-            </div>
-            <!-- //.navbar-header -->
-
-            <div class="navbar-collapse collapse navbar-rj-collapse">
-                <ul class="nav navbar-nav ">
-                    <li class="page-scroll">
-                        <a href="/#who-we-are">ACERCA DE NOSOTROS</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a href="/#our-services">SERVICIOS</a>
-                    </li>
-
-                    <li class="page-scroll">
-                      <a href="/#keep-in-touch">REDES SOCIALES</a>
-                    </li>
-
-                  
-                    <li class="page-scroll">
-                        <a href="/#our-blog">LO NUEVO</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a href="/blog" onclick="window.location = '/blog'">BLOG</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a  href data-toggle="modal" data-target="#modalAccess">INGRESAR</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0" style="padding-top: 1rem;" action="{{route('products.search')}}" method="POST">
-                  @csrf
-                  <input class="form-control mr-sm-2" name='busqueda' type="search" placeholder="Descubre" aria-label="Search">
-                  <a type="button" class="btn btn-outline-success my-2 my-sm-0 fa fa-search" type="submit" ></a>
-                </form>
-            </div>
-            <!-- //.navbar-collapse -->
-        </div>
-        <!-- //.container -->
-    </nav>
-    <!-- //End Navbar -->
+    @include('components.globals.navbar-two')
     <div class="container">
       <div class="row" style="margin-top:2rem;margin-bottom:2rem;">
         @isset($products)
+        @if(count($products) > 0 )
         @foreach($products as $product)
         <div class="col-md-4">
           <div class="card" style="width: 100%;">
@@ -99,8 +47,23 @@
                 @include('components.btn-cotizacion')
                 </div>
               </div>
+              @include('components.cotizacion.modal-cotizacion')
           </div>
+        
           @endforeach
+          @else
+          <div class="row justify-content-center" style="margin-top:5%;margin-bottom:5%;">
+            <div class="col-12 col-lg-8">
+              <h3 class="h3-responsive">Ningún producto coincide con tu busqueda</h3>
+              <p class="lead">Nos discupalmos por el error, por favor prueba con otro término de busqueda</p>
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <a href="/" class="btn btn-block">Regresar a Inicio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          @endif
           @endisset
         </div>
       </div>
@@ -298,7 +261,7 @@
         </div>
       </div>
     </div>
-    @include('components.cotizacion.modal-cotizacion')
+    
     <!-- //End Footer -->
     <!-- Plugins JS -->
     <script src="libs/jquery.min.js"></script>

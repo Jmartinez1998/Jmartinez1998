@@ -15,15 +15,23 @@
       <img src="" style="width:30%;margin-left: 35%;margin-right: 35%;">
       <h1 style="text-align:center">¡Ha llegado una cotización nueva!</h1>
       <h2>Hola, </h2>
-      <h4>Lo esperamos en la fecha en nuestras oficinas.</h4>
+      <h4>El cliente {{$request['nombre']}} ha enviado una cotización para el producto {{$request->producto->nombre}}.</h4>
     </div>
     <hr>
     <div class="col-md-2"></div>
     <div class="col-md-8">
     <div class="jumbotron" style="border-radius:10px">
       <div class="container">
-        <h3 style="color:#2a76b0">Usted nos ha proporcionado la siguiente información:</h3>
+        <h3 style="color:#2a76b0">Datos que proporciono el cliente:</h3>
         <br>
+        <strong>Nombre: </strong>
+        <h5 style="color:#2a76b0">{{$request['nombre']}}</h5>
+        <strong>Email:</strong>
+        <h5 style="color:#2a76b0">{{$request['email']}}</h5>
+        <strong>Empresa: </strong>
+        <h5 style="color:#2a76b0">{{$request['empresa']}}</h5>
+        <strong>Mensaje: </strong>
+        <h5 style="color:#2a76b0">{{$request['mensaje']}}</h5>
       </div> 
     </div>
     </div>

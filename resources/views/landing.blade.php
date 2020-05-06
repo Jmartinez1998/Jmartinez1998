@@ -25,13 +25,6 @@
     <link rel="stylesheet" href="/libs/alertifyjs/css/alertify.min.css">
     <!-- Main CSS -->
     <link href="assets/css/green.css" rel="stylesheet" type="text/css">
-    <!--<link href="assets/css/colors/blue.css" rel="stylesheet" type="text/css">-->
-
-    <!-- Modernizr JS for IE9 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="assets/plugins/modernizr.min.js"></script>
-    <![endif]-->
-     <!-- Script -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      @livewireStyles
      @livewireScripts
@@ -51,7 +44,6 @@
     z-index:999;
 }
 </style>
-
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="51">
     <div id="page-loader">
@@ -60,8 +52,6 @@
         </div>
         <!-- //.preload -->
     </div>
-
-
     <!-- Begin Intro Section -->
     <section id="intro" style="margin-top:-1.8rem;">
         <div class="intro-body text-center">
@@ -76,67 +66,8 @@
             </div>
             <!-- //.container -->
         </div>
-        <!-- //.intro-body -->
     </section>
-    <!-- //End Intro Section -->
-
-
-    <!-- Begin Navbar -->
-    <nav id="navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-rj-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand" href="#page-top"><img src="/assets/images/system/bg2.png" class="img-fluid img-responsive img-logo-banner" style="width:14rem;height:4.5rem;margin-top:1rem;margin-bottom:1rem;" alt=""></a>
-            </div>
-            <!-- //.navbar-header -->
-
-            <div class="navbar-collapse collapse navbar-rj-collapse">
-                <ul class="nav navbar-nav ">
-                    <li class="page-scroll">
-                        <a href="#who-we-are">{{__('ini.navbar.NB1')}}</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a href="#our-services">{{__('ini.navbar.NB2')}}</a>
-                    </li>
-
-                    <li class="page-scroll">
-                      <a href="#keep-in-touch">{{__('ini.navbar.NB3')}}</a>
-                    </li>
-
-                  
-                    <li class="page-scroll">
-                        <a href="#our-blog">{{__('ini.navbar.NB5')}}</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a href="/blog" onclick="window.location = '/blog'">{{__('ini.navbar.NB6')}}</a>
-                    </li>
-
-                    <li class="page-scroll">
-                        <a  href data-toggle="modal" data-target="#modalAccess">{{__('ini.navbar.LOG')}}</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0" style="padding-top: 1rem;" action="{{route('products.search')}}" method="POST">
-                    @csrf
-                    <input class="form-control mr-sm-2" name='busqueda' type="search" placeholder="Descubre" aria-label="Search">
-                    <a type="button" class="btn btn-outline-success my-2 my-sm-0 fa fa-search" type="submit" ></a>
-                  </form>
-            </div>
-            <!-- //.navbar-collapse -->
-        </div>
-        <!-- //.container -->
-    </nav>
-    <!-- //End Navbar -->
-
-
-    <!-- Begin Who We Are Section -->
+   @include('components.globals.navbar')
     <section id="who-we-are" class="section">
         <div class="section-inner">
             <div class="container section-content">
@@ -153,8 +84,6 @@
                     </div>
                     <!-- //.col-md-12 -->
                 </div>
-                <!-- //.row -->
-
                 <div class="row">
                     <div class="col-md-6">
                         <div id="carousel-who-we-are" class="owl-carousel owl-theme">
@@ -431,7 +360,6 @@
                                     <!-- <li>
                                         <a href="#" data-filter=".logo" class="btn btn-rj">Logo</a>
                                     </li>
-
                                     <li>
                                         <a href="#" data-filter=".illustration" class="btn btn-rj">Illustration</a>
                                     </li> -->
@@ -645,161 +573,9 @@
             </div>
           </div>
         </div>
-        @include('components.chat.icon-chat')
-    <!-- Begin Footer -->
-    <footer class="footer">
-        <!-- Begin Footer Section -->
-        <section id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 col-md-4 footer-column not-right-column" style="margin-top:2.1rem;">
-                        <div class="footer-text">
-                            <h4>Contactanos</h4>
-
-                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla rebds vel pellentesqu</p> -->
-                            <p>Nos gustaría saber más de tí dejanos algún mensaje o contáctanos</p>
-                            <ul class="icon-list list-unstyled">
-                                <li>
-                                    <i class="fa fa-phone"></i> +8712127851
-                                </li>
-
-                                <li>
-                                    <i class="fa fa-envelope-o"></i> audi-laguna@audi.com.mx
-                                </li>
-
-                                <li>
-                                    <i class="fa fa-map-marker"></i> 14374 Salemba Raya, Central Jakarta
-                                </li>
-
-                                <li>
-                                    <i class="fa fa-clock-o"></i> HORARIOS: LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
-                                </li>
-                            </ul>
-
-                            <ul class="social-icon-list list-unstyled list-inline">
-                                <li>
-                                    <a href="https://www.facebook.com/search/top/?q=green%2086%2C%20ecodise%C3%B1o"><i class="fa fa-facebook"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                                </li>
-
-                                <li class="hidden-xs">
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- //.footer-text -->
-                    </div>
-                    <!-- //.footer-column -->
-
-                    <!-- //.footer-column -->
-
-                    <div class="col-sm-4 col-md-4 footer-column">
-                        <div class="footer-text">
-                            <h4>Dejanos algún mensaje</h4>
-
-                            <p></p>
-
-                            <form role="form" class="newsletter-form" id="frm-send-message">
-                                <div class="form-group">
-                                    <label for="email_address">Correo*</label>
-                                    <input type="email" id="email_address" class="form-control" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="first_name">Nombre</label>
-                                    <input type="text" id="first_name" class="form-control" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="message">Mensaje</label>
-                                    <textarea type="text" id="message" style="background-color:transparent;" class="form-control" required></textarea>
-                                </div>
-
-                                <button type="submit" class="btn btn-rj" id="btnSend">Enviar</button>
-                            </form>
-                        </div>
-                        <!-- //.footer-text -->
-                    </div>
-                    <!-- //.footer-column -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-        </section>
-        <!-- //End Footer Section -->
-
-        <!-- Begin Copyright -->
-        <div id="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4" style="">
-
-                    </div>
-                    <div class="col-md-4" style="">
-                        <p>UTT | Project - JLMR-JLMM-KABD-IEPV &copy; {{Date('Y')}} <a href="#">Audi Laguna.</a></p>
-                    </div>
-                    <div class="col-md-4" style="">
-
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //End Copyright -->
-    </footer>
-
-
-    <div class="modal fade in" id="modalAccess" tabindex="-1" role="dialog" aria-hidden="false">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="">
-                  <label>Administración del sistema</label>
-                  <hr class="hr-login">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4 hidden-sm hidden-xs">
-                <img src="/assets/images/system/bg2.png" class="img-responsive">
-              </div>
-              <div class="col-md-8">
-                <div class="">
-                  <div class="form-group">
-                    <label>Correo Electrónico</label>
-                    <input type="email" class="form-control" id="correo">
-                  </div>
-                  <div class="form-group">
-                    <label>Contraseña</label>
-                    <input type="password" class="form-control" id="pass">
-                  </div>
-                  <div class="form-group text-right">
-                    <button type="button" class="btn btn-warning" style="background-color:#d53b19; border-color:#fff" data-dismiss="modal" id="btnRegister">
-                      <span class="fa fa-arrow-left"></span>
-                      Regresar
-                    </button>
-                    <button type="button" class="btn btn-success" style="background-color:#000; border-color:#fff" id="btnLogin">
-                      <span class="fa fa-check"></span>
-                      Entrar
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- //End Footer -->
-
+    @include('components.chat.icon-chat')
+    @include('components.globals.footer')
+    @include('components.globals.login')
     @include('components.chat.icon-chat')
     <!-- Plugins JS -->
     <script src="libs/jquery.min.js"></script>
@@ -855,10 +631,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
-

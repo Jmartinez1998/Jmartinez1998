@@ -20,9 +20,7 @@
     @yield('css')
 </head>
 <body>
-  <!--Main Navigation-->
 <header>
-
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark black">
         <a style="margin-left:5rem;" class="navbar-brand" href="/"><img src="/assets/images/logo-banner.png" class="img-fluid" style="width:10rem;height:2.6rem;" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,7 +99,7 @@ LUNES A VIERNES DE 9 AM A 6 PM Y SÁBADO DE 10 AM A 1 PM
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <p>Copyright &copy; 2016 <a href="#">Audi Laguna.</a></p>
+                        <p>Copyright &copy; 2016 <a href="#">Audi Laguna.</a></p> 
                     </div>
                     <!-- //.col-md-12 -->
                 </div>

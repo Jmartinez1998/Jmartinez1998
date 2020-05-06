@@ -24,8 +24,9 @@ class CotizacionProducer
         $cotizacion ->empresa    = $data['empresa'];
         $cotizacion ->producto_id      = $data['id'];
         $cotizacion ->save();
-        Mail::to($data['correo'])->send(new EmailCotizacionUser($cotizacion));
-        Mail::to('qarlita.peque.burciaga@gmail.com')->send(new EmailCotizacionAdmin($cotizacion));
+        $product = Cotizacione::where('id', '=', $cotizacion->id)->with('producto')->first();
+        Mail::to($data['correo'])->send(new EmailCotizacionUser($product));
+        Mail::to('qarlita.peque.burciaga@gmail.com')->send(new EmailCotizacionAdmin($product));
         return [
             'status'  => 200,
             'message' => 'Cita Creada Correctamente',
