@@ -28,6 +28,7 @@ class SectionController extends Controller
   }
   public function sendAdminView(){
     $sections = Section::where('estatus', '=', 1)->get();
+    //$sections = DB::select('call sec_pro()');
     return view('sections', ['secciones' => $sections]);
   }
 
