@@ -30,6 +30,9 @@
         <li class="page-scroll">
           <a href data-toggle="modal" data-target="#modalAccess">{{__('ini.navbar.LOG')}}</a>
         </li>
+        <li class="page-scroll">
+          <a href="http://127.0.0.1:3000/" >  <i class="fa fa-envelope" style="font-size:35px;color:#fff;padding-bottom:20px"></i> </a>
+        </li>
       </ul>
       <form class="form-inline my-2 my-lg-0" style="padding-top: 1rem;" action="{{route('products.search')}}" method="POST">
         @csrf

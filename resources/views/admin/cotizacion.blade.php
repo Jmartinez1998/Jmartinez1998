@@ -77,7 +77,6 @@
             Respondiendo cotización
           </h3>
         </div>
-
         <div class="box-body">
           <form name="form-producto">
             <div class="form-group">
