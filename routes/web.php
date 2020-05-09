@@ -50,6 +50,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/admin/cotizaciones', 'CotizacionController@view');
     Route::get('/admin/cotizacion/{id}','CotizacionController@viewCotizacion');
     Route::get('/cotizacion-delete/{id}','CotizacionController@delete');
+    Route::post('enviando', 'CotizacionRespuestaController@send')->name('correo.cotizacion.respuesta');
 
 });
 

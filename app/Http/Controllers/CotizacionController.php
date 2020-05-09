@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Producers\CotizacionProducer; 
 use App\Producto;
 use App\Cotizacione;
+use App\CotizacionRespuesta;
 
 class CotizacionController extends Controller
 {
@@ -18,8 +19,10 @@ class CotizacionController extends Controller
     }
 
     public function view(Request $req){
-        $Cotizaciones = Cotizacione::where('estatus', '=', 1)->with('producto')->get();
-        return view('admin.cotizaciones', ['cotizaciones' => $Cotizaciones]);
+
+        $cotizaciones = Cotizacione::where('estatus', '=', 1)->with('producto')->get();
+        $coti = CotizacionRespuesta::with('cotizacion')->get();
+        return view('admin.cotizaciones',compact('cotizaciones'));
       }
 
       public function viewCotizacion(Request $req,$id){

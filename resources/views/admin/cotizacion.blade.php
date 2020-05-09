@@ -78,47 +78,37 @@
           </h3>
         </div>
         <div class="box-body">
-          <form name="form-producto">
+          <form name="form-producto" action="{{route('correo.cotizacion.respuesta')}}" method="POST">
+            @csrf
             <div class="form-group">
               <label>Asunto</label>
-              <input type="text" name="titulo" class="form-control" autofocus>
+              <input type="text" name="asunto" class="form-control" autofocus> 
             </div>
             <div class="form-group">
-              <label>Archivo</label>
               <div class="input-group">
-                <input type="text" name="file-image" class="form-control" readonly>
+                <input type="text" class="form-control" name="fecha" value="{{ date('Y-m-d') }}" style="display:none">
+                <input type="text" name="cotizacion_id" value="{{$cotizacion->id}}" style="display:none">
+                <input type="text" name="correo" value="{{$cotizacion->email}}" style="display:none">
                 <span class="input-group-btn">
-                  <button type="button" name="openfile" class="btn btn-primary">
-                    <span class="fa fa-folder-open"></span>&nbsp;
-                    Abrir
-                  </button>
                 </span>
               </div>
             </div>
             <div class="form-group">
               <label>Mensaje</label>
-              <textarea name="descripcion" class="form-control" rows="8" maxlength="150"></textarea>
+              <textarea name="mensaje" class="form-control" rows="8" maxlength="150"></textarea>
             </div>
-          </form>
-          <form name="form-imagen" hidden="hidden" id="form-imagen">
-            <input type="file" name="imagen" id="imagen">
-          </form>
         </div>
-
         <div class="box-footer">
           <div class="text-right">
             <button type="button" name="conf-cancel" class="btn btn-warning conf-display">
               <span class="fa fa-trash"></span>&nbsp;
               Cancelar
             </button>
-            <button type="button" name="preview" class="btn btn-info btn-preview">
-              <span class="fa fa-eye"></span>&nbsp;
-              Previsualizar
-            </button>
-            <button type="button" name="saveproducto" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary">
               <span class="fa fa-check"></span>&nbsp;
-              Guardar producto
+              Enviar cotización
             </button>
+          </form>
           </div>
         </div>
       </div>

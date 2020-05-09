@@ -38,7 +38,11 @@
                 <td>{{$cotizacion->email}}</td>
                 <td>{{$cotizacion->producto->nombre}}</td>
                 <td>{{$cotizacion->created_at}}</td>
+                @if (count(DB::table('cotizacion_respuestas')->where('cotizacion_id', '=', $cotizacion->id)->get()) > 1)
+                <td>Si</td>
+                @else
                 <td>NO</td>
+                @endif
                 <td>
                   <center>
                     <a type="button" href="/cotizacion-delete/{{$cotizacion->id}}" name="cotizacion-del" class="btn btn-danger btn-inline-block" title="Eliminar">

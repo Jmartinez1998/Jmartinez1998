@@ -7,18 +7,19 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class EmailCotizacionAdmin extends Mailable
+class EmailCotizacionResUser extends Mailable
 {
     use Queueable, SerializesModels;
-    public $subject = 'Pedido de Cotización';
+    public $subject = 'Cotización AudiLaguna';
     public $request;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($request)
-    { 
+    public function __construct( $request)
+    {
         $this->request = $request;
     }
 
@@ -29,6 +30,6 @@ class EmailCotizacionAdmin extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.cotizacion-admin');
+        return $this->view('emails.respuestas.cotizacionUser');
     }
 }
